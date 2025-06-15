@@ -1,0 +1,180 @@
+	    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sierpinski Triangle Fractal Generator</title>
+    <!-- Tailwind CSS for styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        /* Custom styles */
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        canvas {
+            background-color: #1a202c; /* Equivalent to dark gray bg-gray-800 */
+            display: block;
+            margin: 0 auto;
+            border-radius: 0.5rem;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+        input[type="number"] {
+            -moz-appearance: textfield;
+        }
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-white antialiased">
+
+    <div class="container mx-auto px-4 py-8 max-w-4xl text-center">
+        <h1 class="text-4xl font-bold mb-4 text-cyan-400">Sierpinski Triangle Fractal</h1>
+        <p class="text-lg text-gray-300 mb-6">
+            This is a real-time generation of the Sierpinski Triangle using a simple algorithm called the "Chaos Game".
+            Adjust the parameters, then regenerate the full fractal or add points one by one.
+        </p>
+
+        <!-- User input controls -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6 max-w-2xl mx-auto">
+            <div>
+                <label for="totalPointsInput" class="block mb-2 text-sm font-medium text-gray-300">Number of Points (Auto)</label>
+                <input type="number" id="totalPointsInput" value="70000" class="bg-gray-700 border border-gray-600 text-white text-sm rounded-lg focus:ring-cyan-500 focus:border-cyan-500 block w-full p-2.5">
+            </div>
+            <div>
+                <label for="startXInput" class="block mb-2 text-sm font-medium text-gray-300">Initial X Coordinate</label>
+                <input type="number" id="startXInput" value="300" class="bg-gray-700 border border-gray-600 text-white text-sm rounded-lg focus:ring-cyan-500 focus:border-cyan-500 block w-full p-2.5">
+            </div>
+            <div>
+                <label for="startYInput" class="block mb-2 text-sm font-medium text-gray-300">Initial Y Coordinate</label>
+                <input type="number" id="startYInput" value="300" class="bg-gray-700 border border-gray-600 text-white text-sm rounded-lg focus:ring-cyan-500 focus:border-cyan-500 block w-full p-2.5">
+            </div>
+        </div>
+
+        <!-- Canvas element where the fractal will be drawn -->
+        <canvas id="fractalCanvas"></canvas>
+
+        <div class="mt-6 flex justify-center items-center gap-4">
+             <button id="regenerateBtn" class="bg-cyan-500 hover:bg-cyan-600 text-white font-bold py-3 px-6 rounded-lg shadow-lg transition-transform transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-cyan-400 focus:ring-opacity-75">
+                Regenerate Full
+            </button>
+            <button id="addPointBtn" class="bg-teal-500 hover:bg-teal-600 text-white font-bold py-3 px-6 rounded-lg shadow-lg transition-transform transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-teal-400 focus:ring-opacity-75">
+                Add Single Point
+            </button>
+        </div>
+    </div>
+
+    <script>
+        // --- Element References ---
+        const canvas = document.getElementById('fractalCanvas');
+        const ctx = canvas.getContext('2d');
+        const regenerateBtn = document.getElementById('regenerateBtn');
+        const addPointBtn = document.getElementById('addPointBtn');
+        const totalPointsInput = document.getElementById('totalPointsInput');
+        const startXInput = document.getElementById('startXInput');
+        const startYInput = document.getElementById('startYInput');
+
+        // --- Global State ---
+        let animationFrameId;
+        let currentPoint; // To hold the state between single point additions
+        let vertices;     // To hold the triangle vertices
+        let isInitialized = false;
+
+        /**
+         * Initializes or resets the canvas and fractal parameters.
+         * This function clears the canvas, sets up the vertices,
+         * and defines the starting point for the fractal.
+         */
+        function initializeFractal() {
+            // Cancel any previous animation to prevent conflicts
+            if (animationFrameId) {
+                cancelAnimationFrame(animationFrameId);
+            }
+
+            // Set canvas size based on responsive container width
+            const containerWidth = canvas.parentElement.clientWidth;
+            const size = Math.min(containerWidth, 600);
+            canvas.width = size;
+            canvas.height = size;
+            
+            // Clear the canvas for a fresh start
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+            // Define the 3 vertices of the main triangle
+            vertices = [
+                { x: canvas.width / 2, y: 50 },
+                { x: 50, y: canvas.height - 50 },
+                { x: canvas.width - 50, y: canvas.height - 50 }
+            ];
+
+            // Get user-defined starting point from input fields
+            const startX = parseInt(startXInput.value) || canvas.width / 2;
+            const startY = parseInt(startYInput.value) || canvas.height / 2;
+            currentPoint = { x: startX, y: startY };
+
+            isInitialized = true;
+        }
+
+        /**
+         * Calculates and draws a single point on the canvas.
+         * This is the core step of the "Chaos Game".
+         */
+        function drawOnePoint() {
+            // Ensure the fractal is initialized before trying to draw
+            if (!isInitialized) {
+                initializeFractal();
+            }
+            // 1. Randomly pick one of the three vertices
+            const randomVertex = vertices[Math.floor(Math.random() * 3)];
+
+            // 2. Calculate the midpoint between the current point and the chosen vertex
+            currentPoint.x = (currentPoint.x + randomVertex.x) / 2;
+            currentPoint.y = (currentPoint.y + randomVertex.y) / 2;
+            
+            // 3. Draw a tiny rectangle (1x1 pixel) at the new midpoint
+            ctx.fillStyle = 'rgba(56, 189, 248, 0.8)'; // light blue
+            ctx.fillRect(currentPoint.x, currentPoint.y, 1, 1);
+        }
+
+        /**
+         * Starts the automatic generation of the full fractal,
+         * drawing points rapidly using requestAnimationFrame.
+         */
+        function startFullGeneration() {
+            initializeFractal(); // Reset everything first
+
+            let pointsDrawn = 0;
+            const totalPoints = parseInt(totalPointsInput.value) || 70000;
+
+            function drawStep() {
+                const pointsPerFrame = 500;
+                for (let i = 0; i < pointsPerFrame; i++) {
+                    if (pointsDrawn >= totalPoints) return;
+                    drawOnePoint();
+                    pointsDrawn++;
+                }
+
+                if (pointsDrawn < totalPoints) {
+                    animationFrameId = requestAnimationFrame(drawStep);
+                }
+            }
+            drawStep(); // Kick off the animation loop
+        }
+
+        // --- Event Listeners ---
+        regenerateBtn.addEventListener('click', startFullGeneration);
+        addPointBtn.addEventListener('click', drawOnePoint);
+        // On resize, just reset and clear the canvas
+        window.addEventListener('resize', initializeFractal); 
+        // On load, just prepare the canvas without drawing anything
+        window.onload = initializeFractal; 
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,969 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>reveal.js - Seminar I</title>
+    <link rel="stylesheet" href="dist/reveal.css">
+    <link rel="stylesheet" href="dist/theme/white.css" />
+
+
+    <!-- zoomR figures when hovering -->
+    <style>
+      .zoomR {
+	  transition: transform .5s; /* Animation */
+	  margin: 0;
+	  background-color: white;
+      }
+
+      .zoomR:hover {right: 50%;
+		    transform:  translate(50%) scale(1.5); /* (150% zoomR - Note: if the zoomR is too large, it will go outside of the viewport) */
+		    box-shadow: 0px 0px 10px 1200px rgba(0,0,0,0.3);
+		   }
+    </style>
+
+    <style>
+      .zoomL {
+	  transition: transform .5s; /* Animation */
+	  margin: 0;
+	  background-color: white;
+      }
+
+      .zoomL:hover {right: 50%;
+		    transform:  translate(-50%) scale(1.5); /* (150% zoomR - Note: if the zoomR is too large, it will go outside of the viewport) */
+		    box-shadow: 0px 0px 10px 1200px rgba(0,0,0,0.3);
+		   }
+    </style>
+    
+  </head>
+  <body>
+
+    <div class="reveal">
+      <div class="slides">
+
+	<!-- Title Slide -->
+	<section style="height: 100%; margin-top: 3%;"  data-background-video="media/abp-backgroundc.mp4" data-background-video-loop="true" data-background-opacity="0.35"> 
+	  <div id="content" >
+	    
+            <div style="margin-top: 15%;" data-background-video="media/abp-backgroundc.mp4"data-background-video-loop data-background-video-muted>
+              <h5>Seminar in Simulation and Computational Modelling II</h5>
+              <h1>Temperature in Active Systems</h1>
+              <h4>How to Define Temperature in out of equilibrium systems</h4>
+              <p>Ana Bensabat Paulino</p>
+            </div>
+
+	    
+	    <img style="bottom: 0;
+			width: 200px;
+			margin: 5%;" data-src="media/uc_logo.png" />
+
+	  </div>	  
+	</section>
+        
+
+	<!-- Slide 1 -->
+	<section style="height: 100%; margin-top: 3%;">
+	  <h2>What is temperature?</h2>
+	  <div style="margin-left: 10%; margin-right: 10%; font-size:30px;">
+	    <!-- <p style="margin:0;" align="left"><b>Definition:</b> systems in which individual constituents consume energy from their surroundings to generate motion and mechanical stress.</p>	     -->
+
+	    <div style="margin-top: 3%;font-size:30px;
+			display: flex;
+			">
+
+	      <div class="fragment fade-in-then-out" style="width:1500px;
+					   position:absolute;
+					   top:5%;
+					   left:-15%">
+		<img style=""  data-src="media/slide1-0.svg"/>
+	      </div>
+	      <div class="fragment fade-in-then-out" style="width:1500px;
+					   position:absolute;
+					   top:5%;
+					   left:-15%">
+		<img style=""  data-src="media/slide1-1.svg"/>
+	      </div>
+	      <div class="fragment fade-in-then-out" style="width:1500px;
+					   position:absolute;
+					   top:5%;
+					   left:-15%">
+		<img style=""  data-src="media/slide1-2.svg"/>
+	      </div>
+	      <div class="fragment" style="width:1500px;
+					   position:absolute;
+					   top:5%;
+					   left:-15%">
+		<img style=""  data-src="media/slide1-3.svg"/>
+	      </div>
+	      
+
+	      <div style="width:650px;
+			  position:absolute;
+			  right:0%;">
+		
+		
+		<p class="fragment"><b>Temperature in equilibrium:</b></p>
+		<ul class="fragment">
+		  <li class="fragment"> All temperature definitions are consistent
+		  <li class="fragment"> Different instruments measure the same temperature
+		  <li class="fragment"> Universal characteristic of thermodymical systems
+		  <li class="fragment"> Reflects "hotness" and "coldness"
+		</ul>
+		
+		<p class="fragment"><b>Caveat:</b></p>
+		<p class="fragment">Only valid in systems in thermal equilibrium or locally in equilibrium</p>
+	      </div>
+	      
+	    </div>
+
+	    <div class="fragment" style="border:1px solid black;
+					 position:absolute;
+					 width:600px;
+					 left:32%;
+					 bottom:16%;
+					 font-size:40px;">
+	    What is the temperature in an <b>active system</b> ?
+	    </div>
+	    
+
+	    <!-- References -->
+	    <p  style="position:absolute;
+		       width: 100%;
+		       bottom: 4%;
+		       left:5%;
+		       text-align: left;
+		       font-size: 20px;
+		       white-space: pre-line;
+		       ">
+	      
+	      [1] A. Puglisi, <it>et al</it>. "Temperature in and out of equilibrium: A review of concepts, tools and attempts" Physics Reports 709–710 (2017) 1–60
+	    </p>
+
+	    
+	    <!-- Manual Page Number -->
+	    <p  style="position:absolute;
+		       width: 100%;
+		       bottom: 4%;
+		       right:5%;
+		       text-align: right;
+		       font-size: 25px;
+		       white-space: pre-line;
+		       ">1
+	    </p>
+
+	</section>
+
+	<!-- Slide 2 -->
+	<section style="height: 100%; margin-top: 3%;">
+	  <h2>Temperature in non-equilibrium systems</h2>
+	  <div style="margin-left: 10%; margin-right: 10%; font-size:30px;">
+	    <p style="margin:0;" align="center">There is a perception of hotness or coolness when we touch a piece of glass or put a finger into a non-equilibrium liquid holding swimming bacterias. Can we introduce a measure to quantify this experience?</p>
+
+	    <div style="margin-top: 3%;font-size:30px;
+			display: flex;
+			justify-content: space-between;
+			">
+
+	      <div class="fragment" style="width:750px;">
+		<p style="align:left;
+			  font-size: 28px;"><b>Out of equilibrium system:</b>
+		  <ol class="fragment">
+		    <li class="fragment"> long relaxation times for some degrees of freedom
+		    <li class="fragment"> large persistent fluxes (e.g. self-propelling active systems)
+		  </ol>
+	
+	      </div>
+	      	      
+
+	      <div class="fragment" style="width:650px;align:right;">
+		<p style="align:right;
+			  font-size: 28px;"><b>Questions:</b>
+		  <ul class="fragment">
+		    <li class="fragment"> what are good definitions of temperature?
+		    <li class="fragment"> are there subsets of the parameter space where different definitions agree?
+		    <li class="fragment"> are they useful?
+		  </ul>
+	      </div>
+	      
+	    </div>
+
+	    <div class="fragment" style="width:650px;
+							  position:absolute;
+							  left: 10%;
+							  bottom: 16%;
+							  ">
+	      <img style=""  data-src="media/slide2-1.svg"/>
+	    </div>
+	    
+	    <div class="fragment " style="width:550px;
+							  position:absolute;
+							  right: 10%;
+							  bottom: 13%;
+							  ">
+	      <img style=""  data-src="media/slide2-2.svg"/>
+	    </div>
+
+
+	    <!-- References -->
+	    <p  style="position:absolute;
+		       width: 100%;
+		       bottom: 4%;
+		       left:5%;
+		       text-align: left;
+		       font-size: 20px;
+		       white-space: pre-line;
+		       ">
+	      
+	      [2] L. Hecht, <it>et al</it>. "How to define temperature in active systems?"  J. Chem. Phys. 161, 224904 (2024)
+	    </p>
+
+	    <!-- Manual Page Number -->
+	    <p  style="position:absolute;
+		       width: 100%;
+		       bottom: 4%;
+		       right:5%;
+		       text-align: right;
+		       font-size: 25px;
+		       white-space: pre-line;
+		       ">2
+	    </p>
+
+	</section>
+	
+
+	<!-- Slide 4 -->
+	<section style="height: 100%; margin-top: 3%;" >
+	  <h2 style="top 0">Velocity-based definitions</h2>
+	  <div style="margin-top: 3%;font-size:30px;">
+
+	    <div class="fragment fade-in-then-out" style="width:2000px;
+							  position:absolute;
+							  top: 8%;">
+	      <img style=""  data-src="media/slide 4-0.svg" style="width:1800px;"/>
+	      <img class="zoomR"  src="media/fig1.jpeg" style="width:500px;
+							  position:absolute;
+							  top: 60%;
+							  left: 9.5%;"></img>
+	    </div>
+
+	    <div class="fragment fade-in-then-out" style="width:2000px;
+							  position:absolute;
+							  top: 8%;">
+	      <img style=""  data-src="media/slide 4.svg" style="width:1800px;"/>
+	      <img class="zoomR"  src="media/fig1.jpeg" style="width:500px;
+							  position:absolute;
+							  top: 60%;
+							  left: 9.5%;"></img>
+	      <img class="zoomL"  src="media/fig2.jpeg" style="width:500px;
+							  position:absolute;
+							  top: 60%;
+							  right: 9.5%;"></img>
+	    </div>
+	    
+	      
+
+	    
+	    <!-- References -->
+	    <p  style="position:absolute;
+		       width: 100%;
+		       bottom: 4%;
+		       left:5%;
+		       text-align: left;
+		       font-size: 20px;
+		       white-space: pre-line;
+		       ">
+	      
+	      [2] L. Hecht, <it>et al</it>. "How to define temperature in active systems?"  J. Chem. Phys. 161, 224904 (2024)
+	    </p>
+
+	    <!-- Manual Page Number -->
+	    <p  style="position:absolute;
+		       width: 100%;
+		       bottom: 4%;
+		       right:5%;
+		       text-align: right;
+		       font-size: 25px;
+		       white-space: pre-line;
+		       ">3
+	    </p>
+
+	</section>
+
+	<!-- Slide 6 -->
+	<section style="height: 100%; margin-top: 3%;" >
+	  <h2 style="top 0">Position-based definitions</h2>
+	  <div style="margin-top: 3%;font-size:30px;">
+
+	    <!-- References -->
+	    <p  style="position:absolute;
+		       width: 100%;
+		       bottom: 4%;
+		       left:5%;
+		       text-align: left;
+		       font-size: 20px;
+		       white-space: pre-line;
+		       ">
+	      
+	      [2] L. Hecht, <it>et al</it>. "How to define temperature in active systems?"  J. Chem. Phys. 161, 224904 (2024)
+	    </p>
+
+	    
+	    <div class="fragment fade-in-then-out" style="width:2000px;
+							  position:absolute;
+							  top: 8%;">
+	      <img style=""  data-src="media/slide 5-0.svg" style="width:1800px;"/>
+	      <img class="zoomR"  src="media/fig3.jpeg" style="width:525px;
+							  position:absolute;
+							  top: 62%;
+							  left: 6.5%;"></img>
+	    </div>
+	    <div class="fragment fade-in-then-out" style="width:2000px;
+							  position:absolute;
+							  top: 8%;">
+	      <img style=""  data-src="media/slide 5.svg" style="width:1800px;"/>
+	      <img class="zoomR"  src="media/fig3.jpeg" style="width:525px;
+							  position:absolute;
+							  top: 62%;
+							  left: 6.5%;"></img>
+	      <img class="zoomL"  src="media/fig4.jpeg" style="width:600px;
+							  position:absolute;
+							  top: 59%;
+							  right: 9.5%;"></img>
+	    </div>
+
+
+
+	    <!-- Manual Page Number -->
+	    <p  style="position:absolute;
+		       width: 100%;
+		       bottom: 4%;
+		       right:5%;
+		       text-align: right;
+		       font-size: 25px;
+		       white-space: pre-line;
+		       ">4
+	    </p>
+
+	</section>
+
+<!-- Slide 7 -->
+	<section style="height: 100%; margin-top: 3%;" >
+	  <h2 style="top 0"><it>Intermezzo:</it> The fluctuation-dissipation theorem</h2>
+	  <div style="margin-left: 10%; margin-right: 10%; font-size:30px;">
+	    <p style="margin:0;" align="center">The fluctuation-dissipation theorem (FDT) is a key principle in statistical mechanics that relates the fluctuations in a system's properties with the dissipation of energy in that system [3].</p>
+	    	    <div class="fragment" style="position:absolute;
+					 width: 50%;
+					 left:0%;
+					 top:18%;
+					 font-size: 22px;
+					 white-space: pre-line;">
+	      <p align="center" style="font-size: 24px;
+				       text-align:center;
+				       margin:0"><b>Preliminaries:</b></p>The dynamical response of an operator <it>A</it> w.r.t. an external perturbation is
+	      \[\begin{align}
+	      \delta\langle A(x,t)\rangle = \int\text{d}^dx'\text{d}t' \chi(x,x',t,t')\delta h(x',t')\quad \xrightarrow[\text{}]{\text{Fourier transform}} \quad x(\omega) = \chi(\omega)f(\omega), \\ \chi\equiv\text{response function}
+	      \end{align}
+	      \] It can be proven [3] that the imaginary part of the response function is proportional to the rate at which work done by external forces is dissipated as heat.
+
+	      The Fourier-space correlation function for two operators is given by:
+	      \[\begin{align}
+	      C_{AB}(\omega) = \langle A(\omega)B(\omega')\rangle\delta(\omega+\omega') &&\text{and} && S_{AB}(\omega) = C_{AB}(\omega) -\langle A\rangle\langle B\rangle 2\pi\delta(\omega).
+	      \end{align}
+	      \]
+	     	      <p align="center" style="
+				       font-size: 24px;
+				       top:52%;
+				       left:22%;
+				       text-align:center;margin:0"><b>Back-of-the-envelope derivation for an harmonic oscillator:</b></p>Consider the equation of motion for a perturbed harmonic oscillator: \[\begin{align}
+	      \ddot{x} + \omega_0^2x + \gamma\dot{x} = f/m.
+	      \end{align}
+	      \] The response function can be obtained by taking the Fourier transform of the equation of motion:
+	      \[\begin{align}
+	      \chi(\omega) = \frac{1}{m}\frac{1}{-\omega^2+\omega_0^2-i\omega\gamma}.
+	      \end{align}
+	      \]
+
+	      
+		    </div>
+	    <div class="fragment" style="position: absolute;
+					 width: 45%;
+					 right: 2%;
+					 font-size: 22px;
+					 top:19%;
+					 white-space: pre-line;">
+	      Considering the force is a noisy variable,
+	      \[\begin{align}
+	      f(\omega) = \xi(\omega)\quad \text{s.t.}\quad \langle\xi(t)\rangle = 0 \quad \text{and} \quad \langle \xi(t)\xi(t')\rangle = 2m\gamma k_BT\delta(t-t').
+	      \end{align}
+	      \]	      we can write
+	      \[\begin{align}
+	      x(\omega) = \chi(\omega)\xi(\omega) = \frac{\chi(\omega)}{m[-\omega^2+\omega_0^2-i\omega\gamma]}.
+	      \end{align}
+	      \]  It then follows
+	      \[\begin{align}
+	      C_{xx}(\omega) = 2m\gamma T |\chi(\omega)|^2.
+	      \end{align}
+	      \]
+	      Considering now the system is only subject to thermal noise, and hence, its average position is zero,
+	      \[\begin{align}
+	      S_{xx}(\omega) = \frac{2k_BT}{\omega} \text{Im}[\chi_{xx}(\omega)]^2.
+	      \end{align}
+	      \]
+	      <div class="fragment" style="border:1px solid black;">
+		The <b>thermal noise</b> in a system is related to its <b>ability to dissipate energy</b>, and the strength of this noise can be predicted from the system's response to an external perturbation.
+		
+	      </div>
+	      
+	    </div>
+	  </div>
+
+	    <!-- References -->
+	    <p  style="position:absolute;
+		       width: 100%;
+		       bottom: 4%;
+		       left:5%;
+		       text-align: left;
+		       font-size: 20px;
+		       white-space: pre-line;
+		       ">
+	      
+	      [3] P. Chaikin and T. Lubensky. Principles of Condensed Matter Physics. Cambridge University Press, 1995. Chap. 7
+	    </p>
+
+	    <!-- Manual Page Number -->
+	    <p  style="position:absolute;
+		       width: 100%;
+		       bottom: 4%;
+		       right:5%;
+		       text-align: right;
+		       font-size: 25px;
+		       white-space: pre-line;
+		       ">5
+	    </p>
+
+	</section>
+
+	
+	<!-- Slide 8 -->
+	<section style="height: 100%; margin-top: 3%;" >
+	  <h2 style="top 0">Dynamics based definitions</h2>
+	  <div style="margin-top: 3%;font-size:30px;">
+
+	    <div class="fragment fade-in-then-out" style="width:2000px;
+							  position:absolute;
+							  top: 10%;">
+	      <img style=""  data-src="media/slide 8-0.svg" style="width:1800px;"/>
+	      <img class="zoomR"  src="media/fig5.jpeg" style="width:525px;
+							  position:absolute;
+							  top: 53%;
+							  left: 6.5%;"></img>
+	    </div>
+	    <div class="fragment fade-in-then-out" style="width:2000px;
+							  position:absolute;
+							  top: 10%;">
+	      <img style=""  data-src="media/slide 8-1.svg" style="width:1800px;"/>
+	      
+	      <img class="zoomR"  src="media/fig5.jpeg" style="width:525px;
+							  position:absolute;
+							  top: 53%;
+							  left: 6.5%;"></img>
+	      <img class="zoomL"  src="media/fig6.jpeg" style="width:850px;
+							  position:absolute;
+							  bottom: 10%;
+							  right: 9.5%;"></img>
+
+	    </div>
+
+	    
+	    <!-- References -->
+	    <p  style="position:absolute;
+		       width: 100%;
+		       bottom: 4%;
+		       left:5%;
+		       text-align: left;
+		       font-size: 20px;
+		       white-space: pre-line;
+		       ">
+	      
+	      [2] L. Hecht, <it>et al</it>. "How to define temperature in active systems?"  J. Chem. Phys. 161, 224904 (2024)
+	    </p>
+
+	    <!-- Manual Page Number -->
+	    <p  style="position:absolute;
+		       width: 100%;
+		       bottom: 4%;
+		       right:5%;
+		       text-align: right;
+		       font-size: 25px;
+		       white-space: pre-line;
+		       ">6
+	    </p>
+
+	</section>
+
+
+
+	<!-- Slide 8 -->
+	<section style="height: 100%; margin-top: 3%;" >
+	  <h2 style="top 0">Active Brownian Particles (ABPs)</h2>
+	  <div style="margin-top: 3%;font-size:30px;">
+
+	    Active Brownian particles not only diffuse due to the collisions with the surrounding fluid, but they also self-propel.
+	    
+	    <div style="margin-left: 10%; margin-right: 10%;">
+	      <div class="fragment" style="position:absolute;
+					   margin-left: 10%;
+					   margin-right: 10%;
+					   left: 0;
+					   top:18%;
+					   font-size:25px;
+					   text-align:left;">
+		
+		\[
+		\begin{align}
+		\gamma \mathbf{\dot{r}}_i& = F_\text{act}\mathbf{n}_i - \nabla_i \sum_{i\neq j}U(r_{ij}) + \sqrt{2\gamma k_B T}\xi_i \\
+		\mathbf{n}_i &= (\cos\theta_i(t),\sin\theta_i(t)) \quad \text{with} \quad \dot{\theta}=\sqrt{2D_{\theta_i}}\eta_i \quad \text{and} \quad D_\theta = 3\gamma k_BT/ \sigma^2_d
+		\end{align}
+		\]		  
+	      </div>
+
+	      <div class="fragment" style="position:absolute;
+					   margin-left: 10%;
+					   margin-right: 10%;
+					   right:0%;
+					   top:21%;
+					   font-size:20px;">
+		\[
+		\begin{align}
+		&\langle\xi_i(t)\rangle=0, \quad \langle\xi_i(t)\xi_j(t^\prime)\rangle=\delta_{ij}\delta(t-t^\prime)\\
+	        &\langle\eta_i(t)\rangle=0, \quad \langle\eta_i(t)\eta_j(t^\prime)\rangle=\delta_{ij}\delta(t-t^\prime)\\
+	        &(m=1)
+		\end{align}
+		\]
+		
+	      </div>	    
+
+	      
+
+
+
+	      <div class="fragment" style="position:absolute;
+					   margin-left: 10%;
+					   margin-right: 10%;
+					   left: 0;
+					   top:39%;
+					   width:40%;
+					   font-size:25px;
+					   text-align:left;">
+
+		For the particle interaction we usually use a truncated and shifted Lennard-Jones potential:
+
+		
+		<div style="position:absolute;
+			    left:0;
+			    top:70px;">
+		  <img src="media/desmos-graph.png" width="350px" height="350px"></img>
+		</div>
+		
+		<div style="position:absolute;
+			    font-size:20px;
+			    left:270px;
+			    width:500px;
+			    top:80px;
+			    ">
+		  
+		  \[
+		  \begin{align}
+		  &U(r_{ij}) =
+		  \begin{cases}
+		  U_{LJ}(r_{ij})-U_{LJ}(r_0) && \text{for } r\leq r_0 \\
+		  0 && \text{for } r > r_0 
+		  \end{cases} \\
+		  &U_{LJ}(r) = 4\epsilon\left[\left(\frac{\sigma}{r}\right)^{12}-\left(\frac{\sigma}{r}\right)^6\right]
+		  \end{align}
+		  \]
+		  
+		  
+		</div>
+
+	      </div>
+
+	      <div  class="fragment" style="position:absolute;
+					    margin-left: 10%;
+					    margin-right: 10%;
+					    right: -5%;
+					    top:39%;
+					    width:50%;
+					    font-size:20px;
+					    text-align:right;">
+
+		<video width="330px" loop="true" src="media/pbp_compressed.mp4" controls="true">
+		</video>
+		<video width="330px" loop="true" src="media/abp_compressed.mp4" controls="true">
+		</video>
+	      </div>
+	      
+
+	      <div  class="fragment" style="position:absolute;
+					    margin-left: 10%;
+					    margin-right: 10%;
+					    left: 42%;
+					    top:71%;
+					    width:50%;
+					    font-size:25px;">
+
+		How do these structures - <b>Mobility Induced Phase-Separations (MIPS)</b> -  emerge in the parameter space of:
+		\[
+		\begin{align}
+		\phi_P = N\frac{\pi \sigma_D^2}{4S} &&
+		\text{Pe} = \frac{Lv_\text{act}}{D} = \frac{\sigma_D F\text{act}}{k_B T}
+		\end{align}\]
+	      </div>
+
+	      
+	    </div>
+	    
+	    <!-- References -->
+	    <p  style="position:absolute;
+		       width: 100%;
+		       bottom: 4%;
+		       left:5%;
+		       text-align: left;
+		       font-size: 20px;
+		       white-space: pre-line;
+		       ">
+	      
+	      [2] L. Hecht, <it>et al</it>. "How to define temperature in active systems?"  J. Chem. Phys. 161, 224904 (2024)
+	    </p>
+
+	    <!-- Manual Page Number -->
+	    <p  style="position:absolute;
+		       width: 100%;
+		       bottom: 4%;
+		       right:5%;
+		       text-align: right;
+		       font-size: 25px;
+		       white-space: pre-line;
+		       ">7
+	    </p>
+
+	</section>
+
+	<!-- Slide 9 -->
+	<section style="height: 100%; margin-top: 3%;" >
+	  <h2 style="top 0">Effect of activity on the temperature</h2>
+	  <div style="margin-top: 3%;font-size:30px;">
+	    <p style="margin:0;" align="center">Molecular dynamics simulations were conducted by Hecht <it>et al.</it> to understand the validity of using these definitions. </p>
+	    <p style="margin:0;" align="center">Non-interacting and interacting ABPs were considered in the dilute regime.</p>
+
+
+	    <div class="fragment fade-in-then-out" style="width:2000px;
+							  position:absolute;
+							  top: 20%;">
+	      <img style=""  data-src="media/slide 9-0.svg" style="width:1800px;"/>
+	      <img class="zoomR"  src="media/fig7.jpeg" style="width:650px;
+							       position:absolute;
+							       bottom: 10%;
+							       left: 4%;"></img>
+	    </div>
+	    
+	    <div class="fragment fade-in-then-out" style="width:2000px;
+							  position:absolute;
+							  top: 20%;">
+	      <img style=""  data-src="media/slide 9-1.svg" style="width:1800px;"/>
+	      <img class="zoomR"  src="media/fig7.jpeg" style="width:650px;
+							       position:absolute;
+							       bottom: 10%;
+							       left: 4%;"></img>
+
+	    </div>
+
+	    <div class="fragment fade-in-then-out" style="width:2000px;
+							  position:absolute;
+							  top: 20%;">
+	      <img style=""  data-src="media/slide 9-2.svg" style="width:1800px;"/>
+	      <img class="zoomR"  src="media/fig7.jpeg" style="width:650px;
+							       position:absolute;
+							       bottom: 10%;
+							       left: 4%;"></img>
+
+	    </div>
+
+	    
+	    <!-- References -->
+	    <p  style="position:absolute;
+		       width: 100%;
+		       bottom: 4%;
+		       left:5%;
+		       text-align: left;
+		       font-size: 20px;
+		       white-space: pre-line;
+		       ">
+	      
+	      [2] L. Hecht, <it>et al</it>. "How to define temperature in active systems?"  J. Chem. Phys. 161, 224904 (2024)
+	    </p>
+
+	    <!-- Manual Page Number -->
+	    <p  style="position:absolute;
+		       width: 100%;
+		       bottom: 4%;
+		       right:5%;
+		       text-align: right;
+		       font-size: 25px;
+		       white-space: pre-line;
+		       ">9
+	    </p>
+
+	</section>
+
+	<!-- Slide 10 -->
+	<section style="height: 100%; margin-top: 3%;" >
+	  <h2 style="top 0">Mass dependence and mass rescaling</h2>
+	  <div style="margin-top: 3%;font-size:30px;">
+	    <p style="margin:0;" align="center">Given the heavy mass dependence of the kinetic and configurational temperature, are the different temperature definitions coherent after a mass rescaling?</p>
+
+
+	    <div class="fragment fade-in-then-out" style="width:2000px;
+							  position:absolute;
+							  top: 20%;">
+	      <img style=""  data-src="media/slide 10-0.svg" style="width:1800px;"/>
+	      <img class="zoomR"  src="media/fig10.jpeg" style="height:350px;
+							       position:absolute;
+							       bottom: 10%;
+							       left: 61%;"></img>
+	      <img class="zoomR"  src="media/fig9.jpeg" style="height:350px;
+							       position:absolute;
+							       bottom: 10%;
+							       left: 38%;"></img>
+	      <img class="zoomR"  src="media/fig8.jpeg" style="height:350px;
+							       position:absolute;
+							       bottom: 10%;
+							       left: 5%;"></img>
+	    </div>
+	    
+	    <div class="fragment fade-in" style="width:2000px;
+							  position:absolute;
+							  top: 20%;">
+	      <img style=""  data-src="media/slide 10-1.svg" style="width:1800px;"/>
+	      <img class="zoomR"  src="media/fig10.jpeg" style="height:350px;
+							       position:absolute;
+							       bottom: 10%;
+							       left: 61%;"></img>
+	      <img class="zoomR"  src="media/fig9.jpeg" style="height:350px;
+							       position:absolute;
+							       bottom: 10%;
+							       left: 38%;"></img>
+	      <img class="zoomR"  src="media/fig8.jpeg" style="height:350px;
+							       position:absolute;
+							       bottom: 10%;
+							       left: 5%;"></img>
+	    </div>
+
+	    
+	    <!-- References -->
+	    <p  style="position:absolute;
+		       width: 100%;
+		       bottom: 4%;
+		       left:5%;
+		       text-align: left;
+		       font-size: 20px;
+		       white-space: pre-line;
+		       ">
+	      
+	      [2] L. Hecht, <it>et al</it>. "How to define temperature in active systems?"  J. Chem. Phys. 161, 224904 (2024)
+	    </p>
+
+	    <!-- Manual Page Number -->
+	    <p  style="position:absolute;
+		       width: 100%;
+		       bottom: 4%;
+		       right:5%;
+		       text-align: right;
+		       font-size: 25px;
+		       white-space: pre-line;
+		       ">8
+	    </p>
+
+	</section>
+
+
+	<!-- Slide 3 -->
+	<section style="height: 100%; margin-top: 3%;">
+	  <div style="margin-left: 5%; margin-right: 5%; font-size:30px;">
+	    
+
+
+	    <div class="fragment fade-in-then-out" style="width:1800px;
+							  position:absolute;
+							  top:-5%;
+							  left:0%;">
+	      <img style=""  data-src="media/slide 3-0.svg"/>
+	    </div>
+
+	    <div class="fragment fade-in-then-out" style="width:1800px;
+							  position:absolute;
+							  top:-5%;
+							  left:0%;">
+	      <img style=""  data-src="media/slide 3-1.svg"/>
+	    </div>
+
+	    <div class="fragment fade-in-then-out" style="width:1800px;
+							  position:absolute;
+							  top:-5%;
+							  left:0%;">
+	      <img style=""  data-src="media/slide 3-2.svg"/>
+	    </div>
+	    <div class="fragment fade-in-then-out" style="width:1800px;
+							  position:absolute;
+							  top:-5%;
+							  left:0%;">
+	      <img style=""  data-src="media/slide 3-3.svg"/>
+	    </div>
+	    <div class="fragment fade-in-then-out" style="width:1800px;
+							  position:absolute;
+							  top:-5%;
+							  left:0%;">
+	      <img style=""  data-src="media/slide 3-4.svg"/>
+	    </div>
+	    
+	    <div class="fragment fade-in-then-out" style="width:1800px;
+							  position:absolute;
+							  top:-5%;
+							  left:0%;">
+	      <img style=""  data-src="media/slide 3-5.svg"/>
+	    </div>
+	    
+	    <div class="fragment fade-in-then-out" style="width:1800px;
+							  position:absolute;
+							  top:-5%;
+							  left:0%;">
+	      <img style=""  data-src="media/slide 3-6.svg"/>
+	    </div>
+	    
+	    <div class="fragment fade-in-then-out" style="width:1800px;
+							  position:absolute;
+							  top:-5%;
+							  left:0%;">
+	      <img style=""  data-src="media/slide 3-7.svg"/>
+	    </div>
+	    
+	    <div class="fragment fade-in-then-out" style="width:1800px;
+							  position:absolute;
+							  top:-5%;
+							  left:0%;">
+	      <img style=""  data-src="media/slide 3-8.svg"/>
+	    </div>
+	    
+	    <div class="fragment fade-in-then-out" style="width:1800px;
+							  position:absolute;
+							  top:-5%;
+							  left:0%;">
+	      <img style=""  data-src="media/slide 3-9.svg"/>
+	    </div>
+	    
+	    <div class="fragment fade-in-then-out" style="width:1800px;
+							  position:absolute;
+							  top:-5%;
+							  left:0%;">
+	      <img style=""  data-src="media/slide 3-10.svg"/>
+	    </div>
+	    
+	    <!-- References -->
+	    <p  style="position:absolute;
+		       width: 100%;
+		       bottom: 4%;
+		       left:5%;
+		       text-align: left;
+		       font-size: 20px;
+		       white-space: pre-line;
+		       ">
+	      
+	      [2] L. Hecht <it>et al</it>. "How to define temperature in active systems?"  J. Chem. Phys. 161, 224904 (2024)
+	      [3] O. Jepps <it>et al</it>. "Microscopic expressions for the thermodynamic temperature" Phys. Rev. E 62, 4757 (2000) 
+	    </p>
+
+	    <!-- Manual Page Number -->
+	    <p  style="position:absolute;
+		       width: 100%;
+		       bottom: 4%;
+		       right:5%;
+		       text-align: right;
+		       font-size: 25px;
+		       white-space: pre-line;
+		       ">9
+	    </p>
+
+	</section>
+
+	
+	<!-- Slide  -->
+	<section style="height: 100%; margin-top: 3%;" >
+	  <h2 style="top 0">Conclusions</h2>
+	  <div style="margin-top: 3%;font-size:30px;">
+
+	    <div style="margin-left: 10%; margin-right: 10%; margin-top: 5%; font-size:35px;">
+	      <ul>
+		<li>The non-trivial coupling between position and velocity in active systems leads to non-Boltzmann distributions making it impossible to uniquely quantify fluctuations based on a single temperature parameter.</li>
+		<li>The different temperature definitions can be grouped into two families.</li>
+		<li>The two families can be matched in the far-from equilibrium regime by rescaling temperatures with the particle mass.</li>
+	      </ul>
+	    </div>
+
+	    <!-- Manual Page Number -->
+	    <p  style="position:absolute;
+		       width: 100%;
+		       bottom: 4%;
+		       right:5%;
+		       text-align: right;
+		       font-size: 25px;
+		       white-space: pre-line;
+		       ">10
+	    </p>
+
+	</section>
+
+	
+
+	
+
+	</div>
+	</div>
+
+	<script src="math/math.js"></script>
+	<script src="dist/reveal.js"></script>
+	<script>
+	  Reveal.initialize({
+	      // The "normal" size of the presentation, aspect ratio will
+	      // be preserved when the presentation is scaled to fit different
+	      // resolutions. Can be specified using percentage units.
+	      width: "1920",
+	      height: "1080",
+
+	      // Factor of the display size that should remain empty around
+	      // the content
+	      margin: 0.04,
+
+	      // Bounds for smallest/largest possible scale to apply to content
+	      minScale: 0.2,
+	      maxScale: 2.0,
+
+	      slideNumber: false,
+
+	      mathjax2: {
+		  // config: 'TeX-AMS_HTML-full',
+		  TeX: {
+		      Macros: {
+			  R: '\\mathbb{R}',
+			  set: [ '\\left\\{#1 \\; ; \\; #2\\right\\}', 2 ]
+		      }
+		  }
+	      },
+
+	      
+
+	      plugins: [ RevealMath.MathJax2 ]
+	  });
+	  
+	</script>
+
+  </body>
+</html>
