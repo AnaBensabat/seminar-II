@@ -3,8 +3,8 @@
 
 <svg
    width="550.33417mm"
-   height="203.44595mm"
-   viewBox="0 0 550.33417 203.44595"
+   height="213.95741mm"
+   viewBox="0 0 550.33417 213.95741"
    version="1.1"
    id="svg1"
    xml:space="preserve"
@@ -17,7 +17,7 @@
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:svg="http://www.w3.org/2000/svg"
-   xmlns:ns2="http://www.iki.fi/pav/software/textext/"><sodipodi:namedview
+   xmlns:ns16="http://www.iki.fi/pav/software/textext/"><sodipodi:namedview
      id="namedview1"
      pagecolor="#ffffff"
      bordercolor="#000000"
@@ -27,9 +27,9 @@
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="mm"
-     inkscape:zoom="0.72995849"
-     inkscape:cx="1482.961"
-     inkscape:cy="354.8147"
+     inkscape:zoom="0.51"
+     inkscape:cx="1061.7647"
+     inkscape:cy="394.11765"
      inkscape:window-width="1876"
      inkscape:window-height="1006"
      inkscape:window-x="0"
@@ -40,7 +40,7 @@
        x="0"
        y="0"
        width="550.33417"
-       height="203.44595"
+       height="213.9574"
        id="page2"
        margin="0"
        bleed="0" /></sodipodi:namedview><defs
@@ -52,13 +52,13 @@
        xml:space="preserve"
        style="font-weight:bold;font-size:4.93889px;font-family:'Source Sans Pro';-inkscape-font-specification:'Source Sans Pro Bold';text-align:center;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#666666;fill-rule:evenodd;stroke:none;stroke-width:0.599264;stroke-linecap:round;stroke-linejoin:round;paint-order:fill markers stroke"
        x="-90.487976"
-       y="207.08824"
+       y="225.21141"
        id="text1"><tspan
          sodipodi:role="line"
          id="tspan1"
          style="font-size:4.93889px;fill:#666666;stroke:none;stroke-width:0.599264"
          x="-90.487976"
-         y="207.08824">Adapted from [2]</tspan></text><text
+         y="225.21141">Adapted from [3]</tspan></text><text
        xml:space="preserve"
        style="font-weight:bold;font-size:7.76111px;font-family:'Source Sans Pro';-inkscape-font-specification:'Source Sans Pro Bold';text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#333333;fill-rule:evenodd;stroke:none;stroke-width:0.804439;stroke-linecap:round;stroke-linejoin:round;paint-order:fill markers stroke"
        x="133.0683"
@@ -108,16 +108,16 @@
            x="-110.58971"
            y="15.512251"
            id="tspan32-7">Parameters considered:</tspan></text><g
-         transform="matrix(0.617791,0,0,0.617791,-94.9989,20.9335)"
-         ns2:version="1.11.1"
-         ns2:texconverter="pdflatex"
-         ns2:pdfconverter="inkscape"
-         ns2:text="$\\rightarrow \\text{Pe} \\in [0.125,256]$\n\n$\\rightarrow \\phi_P = 0.025$\n\n$\\rightarrow M\\in [0.0004,6.25]$"
-         ns2:preamble="/home/bensabat/.config/inkscape/extensions/textext/default_packages.tex"
-         ns2:scale="1.7512135509582212"
-         ns2:alignment="middle center"
-         ns2:inkscapeversion="1.4.2"
-         ns2:jacobian_sqrt="0.617791"
+         transform="matrix(0.76802191,0,0,0.76802191,-94.998881,20.933556)"
+         ns16:version="1.11.1"
+         ns16:texconverter="pdflatex"
+         ns16:pdfconverter="inkscape"
+         ns16:text="$\\rightarrow \\text{Pe} \\in [0.125,256]$\n\n$\\rightarrow \\phi_P = 0.025$\n\n$\\rightarrow M\\in [0.0004,6.25]$"
+         ns16:preamble="/home/bensabat/.config/inkscape/extensions/textext/default_packages.tex"
+         ns16:scale="1.7512135509582212"
+         ns16:alignment="middle center"
+         ns16:inkscapeversion="1.4.2"
+         ns16:jacobian_sqrt="0.617791"
          id="g118"><defs
    id="id-e03621db-0cf2-45a2-9b32-8b90fc3a384d" />
   <g
@@ -478,15 +478,15 @@
       </g></g>
 </g></g><g
        transform="matrix(0.815412,0,0,0.815412,214.66678,53.396224)"
-       ns2:version="1.11.1"
-       ns2:texconverter="pdflatex"
-       ns2:pdfconverter="inkscape"
-       ns2:text="$T_\\text{kin}$"
-       ns2:preamble="/home/bensabat/.config/inkscape/extensions/textext/default_packages.tex"
-       ns2:scale="2.31140357144969"
-       ns2:alignment="middle center"
-       ns2:inkscapeversion="1.4.2"
-       ns2:jacobian_sqrt="0.815412"
+       ns16:version="1.11.1"
+       ns16:texconverter="pdflatex"
+       ns16:pdfconverter="inkscape"
+       ns16:text="$T_\\text{kin}$"
+       ns16:preamble="/home/bensabat/.config/inkscape/extensions/textext/default_packages.tex"
+       ns16:scale="2.31140357144969"
+       ns16:alignment="middle center"
+       ns16:inkscapeversion="1.4.2"
+       ns16:jacobian_sqrt="0.815412"
        id="g157-3-0"><defs
    id="id-b70e5460-76cb-49a2-b589-da70cf7c9250-1-6" />
   <g
@@ -523,15 +523,15 @@
       </g></g>
 </g><g
        transform="matrix(0.815412,0,0,0.815412,234.21341,53.275871)"
-       ns2:version="1.11.1"
-       ns2:texconverter="pdflatex"
-       ns2:pdfconverter="inkscape"
-       ns2:text="$T_\\text{kin4}$"
-       ns2:preamble="/home/bensabat/.config/inkscape/extensions/textext/default_packages.tex"
-       ns2:scale="2.31140357144969"
-       ns2:alignment="middle center"
-       ns2:inkscapeversion="1.4.2"
-       ns2:jacobian_sqrt="0.815412"
+       ns16:version="1.11.1"
+       ns16:texconverter="pdflatex"
+       ns16:pdfconverter="inkscape"
+       ns16:text="$T_\\text{kin4}$"
+       ns16:preamble="/home/bensabat/.config/inkscape/extensions/textext/default_packages.tex"
+       ns16:scale="2.31140357144969"
+       ns16:alignment="middle center"
+       ns16:inkscapeversion="1.4.2"
+       ns16:jacobian_sqrt="0.815412"
        id="g163"><defs
    id="id-c46d4c85-8805-43ed-8738-ee8e133724ce" />
   <g
@@ -573,15 +573,15 @@
       </g></g>
 </g><g
        transform="matrix(0.815412,0,0,0.815412,222.67027,33.820496)"
-       ns2:version="1.11.1"
-       ns2:texconverter="pdflatex"
-       ns2:pdfconverter="inkscape"
-       ns2:text="$T_\\text{osc}$"
-       ns2:preamble="/home/bensabat/.config/inkscape/extensions/textext/default_packages.tex"
-       ns2:scale="2.31140357144969"
-       ns2:alignment="middle center"
-       ns2:inkscapeversion="1.4.2"
-       ns2:jacobian_sqrt="0.815412"
+       ns16:version="1.11.1"
+       ns16:texconverter="pdflatex"
+       ns16:pdfconverter="inkscape"
+       ns16:text="$T_\\text{osc}$"
+       ns16:preamble="/home/bensabat/.config/inkscape/extensions/textext/default_packages.tex"
+       ns16:scale="2.31140357144969"
+       ns16:alignment="middle center"
+       ns16:inkscapeversion="1.4.2"
+       ns16:jacobian_sqrt="0.815412"
        id="g168"><defs
    id="id-5ee325ea-6caf-495c-832e-8c6e6bbf292e" />
   <g
@@ -618,15 +618,15 @@
       </g></g>
 </g><g
        transform="matrix(0.815412,0,0,0.815412,213.55054,43.354016)"
-       ns2:version="1.11.1"
-       ns2:texconverter="pdflatex"
-       ns2:pdfconverter="inkscape"
-       ns2:text="$T_\\text{Ein}$"
-       ns2:preamble="/home/bensabat/.config/inkscape/extensions/textext/default_packages.tex"
-       ns2:scale="2.31140357144969"
-       ns2:alignment="middle center"
-       ns2:inkscapeversion="1.4.2"
-       ns2:jacobian_sqrt="0.815412"
+       ns16:version="1.11.1"
+       ns16:texconverter="pdflatex"
+       ns16:pdfconverter="inkscape"
+       ns16:text="$T_\\text{Ein}$"
+       ns16:preamble="/home/bensabat/.config/inkscape/extensions/textext/default_packages.tex"
+       ns16:scale="2.31140357144969"
+       ns16:alignment="middle center"
+       ns16:inkscapeversion="1.4.2"
+       ns16:jacobian_sqrt="0.815412"
        id="g179"><defs
    id="id-153a5d2e-d9e8-4f85-ace4-01ecc1fa2646" />
   <g
@@ -663,15 +663,15 @@
       </g></g>
 </g><g
        transform="matrix(0.81541199,0,0,0.81541199,269.7793,53.454947)"
-       ns2:version="1.11.1"
-       ns2:texconverter="pdflatex"
-       ns2:pdfconverter="inkscape"
-       ns2:text="$T_\\text{conf}$"
-       ns2:preamble="/home/bensabat/.config/inkscape/extensions/textext/default_packages.tex"
-       ns2:scale="2.31140357144969"
-       ns2:alignment="middle center"
-       ns2:inkscapeversion="1.4.2"
-       ns2:jacobian_sqrt="1.0"
+       ns16:version="1.11.1"
+       ns16:texconverter="pdflatex"
+       ns16:pdfconverter="inkscape"
+       ns16:text="$T_\\text{conf}$"
+       ns16:preamble="/home/bensabat/.config/inkscape/extensions/textext/default_packages.tex"
+       ns16:scale="2.31140357144969"
+       ns16:alignment="middle center"
+       ns16:inkscapeversion="1.4.2"
+       ns16:jacobian_sqrt="1.0"
        id="g178"><defs
    id="id-03a641d2-60f7-42ee-b3e6-c5b93b9cbcd0" />
   <g
@@ -713,15 +713,15 @@
       </g></g>
 </g><g
        transform="matrix(0.815412,0,0,0.815412,233.88482,43.821614)"
-       ns2:version="1.11.1"
-       ns2:texconverter="pdflatex"
-       ns2:pdfconverter="inkscape"
-       ns2:text="$T_\\text{vir}$"
-       ns2:preamble="/home/bensabat/.config/inkscape/extensions/textext/default_packages.tex"
-       ns2:scale="2.31140357144969"
-       ns2:alignment="middle center"
-       ns2:inkscapeversion="1.4.2"
-       ns2:jacobian_sqrt="0.815412"
+       ns16:version="1.11.1"
+       ns16:texconverter="pdflatex"
+       ns16:pdfconverter="inkscape"
+       ns16:text="$T_\\text{vir}$"
+       ns16:preamble="/home/bensabat/.config/inkscape/extensions/textext/default_packages.tex"
+       ns16:scale="2.31140357144969"
+       ns16:alignment="middle center"
+       ns16:inkscapeversion="1.4.2"
+       ns16:jacobian_sqrt="0.815412"
        id="g184-5"><defs
    id="id-24eccdd7-5231-4bf6-9d32-b3a7555a05a9-9" />
   <g
@@ -758,15 +758,15 @@
       </g></g>
 </g><g
        transform="matrix(0.86663817,0,0,0.86663817,265.15594,43.322584)"
-       ns2:version="1.11.1"
-       ns2:texconverter="pdflatex"
-       ns2:pdfconverter="inkscape"
-       ns2:text="$T_\\text{eff}$"
-       ns2:preamble="/home/bensabat/.config/inkscape/extensions/textext/default_packages.tex"
-       ns2:scale="1.7512135509582212"
-       ns2:alignment="middle center"
-       ns2:inkscapeversion="1.4.2"
-       ns2:jacobian_sqrt="0.61779"
+       ns16:version="1.11.1"
+       ns16:texconverter="pdflatex"
+       ns16:pdfconverter="inkscape"
+       ns16:text="$T_\\text{eff}$"
+       ns16:preamble="/home/bensabat/.config/inkscape/extensions/textext/default_packages.tex"
+       ns16:scale="1.7512135509582212"
+       ns16:alignment="middle center"
+       ns16:inkscapeversion="1.4.2"
+       ns16:jacobian_sqrt="0.61779"
        id="g286"><defs
    id="id-ff48a229-a238-4d32-9433-c128fde3ba8f" />
   <g

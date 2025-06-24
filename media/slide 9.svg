@@ -2,9 +2,9 @@
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
 <svg
-   width="550.33417mm"
-   height="203.44595mm"
-   viewBox="0 0 550.33417 203.44595"
+   width="595.1098mm"
+   height="227.36021mm"
+   viewBox="0 0 595.10981 227.36021"
    version="1.1"
    id="svg1"
    xml:space="preserve"
@@ -17,7 +17,7 @@
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:svg="http://www.w3.org/2000/svg"
-   xmlns:ns2="http://www.iki.fi/pav/software/textext/"><sodipodi:namedview
+   xmlns:ns16="http://www.iki.fi/pav/software/textext/"><sodipodi:namedview
      id="namedview1"
      pagecolor="#ffffff"
      bordercolor="#000000"
@@ -28,14 +28,14 @@
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="mm"
      inkscape:zoom="0.52"
-     inkscape:cx="1100.9615"
-     inkscape:cy="469.23077"
+     inkscape:cx="1075.9615"
+     inkscape:cy="463.46154"
      inkscape:window-width="1876"
      inkscape:window-height="1006"
      inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="1"
-     inkscape:current-layer="layer1"
+     inkscape:current-layer="g185"
      showgrid="false" /><defs
      id="defs1"><g
        id="id-a450aaad-7a0f-4b29-9eb7-d2f31e44323d"><g
@@ -287,129 +287,139 @@
      id="layer1"
      transform="translate(121.38682,-15.296224)"><text
        xml:space="preserve"
-       style="font-weight:bold;font-size:4.93888889px;font-family:'Source Sans Pro';-inkscape-font-specification:'Source Sans Pro Bold';text-align:center;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#666666;fill-rule:evenodd;stroke:none;stroke-width:0.599264;stroke-linecap:round;stroke-linejoin:round;paint-order:fill markers stroke"
-       x="-94.413162"
-       y="207.08824"
+       style="font-weight:bold;font-size:5.21606px;font-family:'Source Sans Pro';-inkscape-font-specification:'Source Sans Pro Bold';text-align:center;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#666666;fill-rule:evenodd;stroke:none;stroke-width:0.632895;stroke-linecap:round;stroke-linejoin:round;paint-order:fill markers stroke"
+       x="-93.404968"
+       y="232.6409"
        id="text1"><tspan
          sodipodi:role="line"
          id="tspan1"
-         style="fill:#666666;stroke:none;stroke-width:0.599264;font-size:4.93888889px"
-         x="-94.413162"
-         y="207.08824">Adapted from [2]</tspan></text><text
+         style="font-size:5.21606px;fill:#666666;stroke:none;stroke-width:0.632895"
+         x="-93.404968"
+         y="232.6409">Adapted from [3]</tspan></text><text
        xml:space="preserve"
-       style="font-weight:bold;font-size:7.76111px;font-family:'Source Sans Pro';-inkscape-font-specification:'Source Sans Pro Bold';text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#333333;fill-rule:evenodd;stroke:none;stroke-width:0.804439;stroke-linecap:round;stroke-linejoin:round;paint-order:fill markers stroke"
-       x="133.0683"
-       y="29.258476"
+       style="font-weight:bold;font-size:8.19666px;font-family:'Source Sans Pro';-inkscape-font-specification:'Source Sans Pro Bold';text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#333333;fill-rule:evenodd;stroke:none;stroke-width:0.849585;stroke-linecap:round;stroke-linejoin:round;paint-order:fill markers stroke"
+       x="179.91574"
+       y="29.566854"
        id="text2-8"><tspan
          sodipodi:role="line"
-         style="font-weight:normal;font-size:7.76111px;text-align:start;text-anchor:start;fill:#333333;stroke-width:0.804439"
-         x="133.0683"
-         y="29.258476"
+         style="font-weight:normal;font-size:8.19666px;text-align:start;text-anchor:start;fill:#333333;stroke-width:0.849585"
+         x="179.91574"
+         y="29.566854"
          id="tspan144"><tspan
    id="tspan118"
-   style="font-weight:bold;font-size:7.76111px;text-align:start;text-anchor:start;fill:#333333;stroke-width:0.804439">Non-interacting particles:</tspan> </tspan><tspan
+   style="font-weight:bold;font-size:8.19666px;text-align:start;text-anchor:start;fill:#333333;stroke-width:0.849585">Non-interacting particles:</tspan> </tspan><tspan
          sodipodi:role="line"
-         style="font-weight:normal;font-size:7.76111px;text-align:start;text-anchor:start;fill:#333333;stroke-width:0.804439"
-         x="133.0683"
-         y="38.959862"
+         style="font-weight:normal;font-size:8.19666px;text-align:start;text-anchor:start;fill:#333333;stroke-width:0.849585"
+         x="179.91574"
+         y="39.812679"
          id="tspan119">    →  Effective equilibrium state for small masses since</tspan><tspan
          sodipodi:role="line"
-         style="font-weight:normal;font-size:7.76111px;text-align:start;text-anchor:start;fill:#333333;stroke-width:0.804439"
-         x="133.0683"
-         y="48.661251"
+         style="font-weight:normal;font-size:8.19666px;text-align:start;text-anchor:start;fill:#333333;stroke-width:0.849585"
+         x="179.91574"
+         y="50.058506"
          id="tspan126">    →  Same value for            and              suggests gaussian distribuition</tspan><tspan
          sodipodi:role="line"
-         style="font-weight:normal;font-size:7.76111px;text-align:start;text-anchor:start;fill:#333333;stroke-width:0.804439"
-         x="133.0683"
-         y="58.362637"
+         style="font-weight:normal;font-size:8.19666px;text-align:start;text-anchor:start;fill:#333333;stroke-width:0.849585"
+         x="179.91574"
+         y="60.304329"
          id="tspan129">    →              and            agree and </tspan><tspan
          sodipodi:role="line"
-         style="font-weight:normal;font-size:7.76111px;text-align:start;text-anchor:start;fill:#333333;stroke-width:0.804439"
-         x="133.0683"
-         y="68.064026"
+         style="font-weight:normal;font-size:8.19666px;text-align:start;text-anchor:start;fill:#333333;stroke-width:0.849585"
+         x="179.91574"
+         y="70.550156"
          id="tspan131">    →              and            agree after force renormalization</tspan><tspan
          sodipodi:role="line"
-         style="font-weight:normal;font-size:7.76111px;text-align:start;text-anchor:start;fill:#333333;stroke-width:0.804439"
-         x="133.0683"
-         y="77.765411"
+         style="font-weight:normal;font-size:8.19666px;text-align:start;text-anchor:start;fill:#333333;stroke-width:0.849585"
+         x="179.91574"
+         y="80.795982"
          id="tspan133">    →  Kinetic definitions depend heavily on the mass</tspan><tspan
          sodipodi:role="line"
-         style="font-weight:normal;font-size:7.76111px;text-align:start;text-anchor:start;fill:#333333;stroke-width:0.804439"
-         x="133.0683"
-         y="87.466797"
+         style="font-weight:normal;font-size:8.19666px;text-align:start;text-anchor:start;fill:#333333;stroke-width:0.849585"
+         x="179.91574"
+         y="91.041801"
          id="tspan134" /><tspan
          sodipodi:role="line"
-         style="font-weight:bold;font-size:7.76111px;text-align:start;text-anchor:start;fill:#333333;stroke-width:0.804439"
-         x="133.0683"
-         y="97.16819"
+         style="font-weight:bold;font-size:8.19666px;text-align:start;text-anchor:start;fill:#333333;stroke-width:0.849585"
+         x="179.91574"
+         y="101.28763"
          id="tspan135">Interacting particles: </tspan><tspan
          sodipodi:role="line"
-         style="font-weight:normal;font-size:7.76111px;text-align:start;text-anchor:start;fill:#333333;stroke-width:0.804439"
-         x="133.0683"
-         y="106.86958"
+         style="font-weight:normal;font-size:8.19666px;text-align:start;text-anchor:start;fill:#333333;stroke-width:0.849585"
+         x="179.91574"
+         y="111.53345"
          id="tspan137">    →  same qualitative results</tspan><tspan
          sodipodi:role="line"
-         style="font-weight:normal;font-size:7.76111px;text-align:start;text-anchor:start;fill:#333333;stroke-width:0.804439"
-         x="133.0683"
-         y="116.57096"
+         style="font-weight:normal;font-size:8.19666px;text-align:start;text-anchor:start;fill:#333333;stroke-width:0.849585"
+         x="179.91574"
+         y="121.77928"
          id="tspan143">    →              saturates at a temperature higher than bath</tspan><tspan
          sodipodi:role="line"
-         style="font-weight:normal;font-size:7.76111px;text-align:start;text-anchor:start;fill:#333333;stroke-width:0.804439"
-         x="133.0683"
-         y="126.27235"
+         style="font-weight:normal;font-size:8.19666px;text-align:start;text-anchor:start;fill:#333333;stroke-width:0.849585"
+         x="179.91574"
+         y="132.0251"
          id="tspan226">                                          → Fails to capture the contribuitions from the interactions! </tspan><tspan
          sodipodi:role="line"
-         style="font-weight:normal;font-size:7.76111px;text-align:start;text-anchor:start;fill:#333333;stroke-width:0.804439"
-         x="133.0683"
-         y="135.97374"
+         style="font-weight:normal;font-size:8.19666px;text-align:start;text-anchor:start;fill:#333333;stroke-width:0.849585"
+         x="179.91574"
+         y="142.27094"
          id="tspan149">    →             and            smaller temperature values at high Pe </tspan><tspan
          sodipodi:role="line"
-         style="font-weight:normal;font-size:7.76111px;text-align:start;text-anchor:start;fill:#333333;stroke-width:0.804439"
-         x="133.0683"
-         y="145.67513"
+         style="font-weight:normal;font-size:8.19666px;text-align:start;text-anchor:start;fill:#333333;stroke-width:0.849585"
+         x="179.91574"
+         y="152.51675"
          id="tspan152">    →               coincides with            since it measures how far an active particle moves up </tspan><tspan
          sodipodi:role="line"
-         style="font-weight:normal;font-size:7.76111px;text-align:start;text-anchor:start;fill:#333333;stroke-width:0.804439"
-         x="133.0683"
-         y="155.37651"
+         style="font-weight:normal;font-size:8.19666px;text-align:start;text-anchor:start;fill:#333333;stroke-width:0.849585"
+         x="179.91574"
+         y="162.76257"
          id="tspan153">          the interaction potential, which depends on the kinetic energy</tspan><tspan
          sodipodi:role="line"
-         style="font-weight:normal;font-size:7.76111px;text-align:start;text-anchor:start;fill:#333333;stroke-width:0.804439"
-         x="133.0683"
-         y="165.0779"
+         style="font-weight:normal;font-size:8.19666px;text-align:start;text-anchor:start;fill:#333333;stroke-width:0.849585"
+         x="179.91574"
+         y="173.00841"
          id="tspan150" /><tspan
          sodipodi:role="line"
-         style="font-weight:normal;font-size:7.76111px;text-align:start;text-anchor:start;fill:#333333;stroke-width:0.804439"
-         x="133.0683"
-         y="174.77928"
+         style="font-weight:normal;font-size:8.19666px;text-align:start;text-anchor:start;fill:#333333;stroke-width:0.849585"
+         x="179.91574"
+         y="183.25423"
          id="tspan147" /><tspan
          sodipodi:role="line"
-         style="font-weight:normal;font-size:7.76111px;text-align:start;text-anchor:start;fill:#333333;stroke-width:0.804439"
-         x="133.0683"
-         y="184.48067"
+         style="font-weight:normal;font-size:8.19666px;text-align:start;text-anchor:start;fill:#333333;stroke-width:0.849585"
+         x="179.91574"
+         y="193.50006"
          id="tspan141" /></text><g
        id="g185"
        transform="translate(1.4925318,13.746225)"><text
          xml:space="preserve"
-         style="font-weight:bold;font-size:7.76111px;font-family:'Source Sans Pro';-inkscape-font-specification:'Source Sans Pro Bold';text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#333333;fill-rule:evenodd;stroke:none;stroke-width:0.804439;stroke-linecap:round;stroke-linejoin:round;paint-order:fill markers stroke"
-         x="-110.58971"
-         y="15.512251"
+         style="font-weight:bold;font-size:8.19666px;font-family:'Source Sans Pro';-inkscape-font-specification:'Source Sans Pro Bold';text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#333333;fill-rule:evenodd;stroke:none;stroke-width:0.849585;stroke-linecap:round;stroke-linejoin:round;paint-order:fill markers stroke"
+         x="-110.40558"
+         y="15.820628"
          id="text2-8-9"><tspan
            sodipodi:role="line"
-           style="font-weight:bold;font-size:7.76111px;text-align:start;text-anchor:start;fill:#333333;stroke-width:0.804439"
-           x="-110.58971"
-           y="15.512251"
-           id="tspan32-7">Parameters considered:</tspan></text><g
-         transform="matrix(0.61779088,0,0,0.61779088,-101.80864,20.933745)"
-         ns2:version="1.11.1"
-         ns2:texconverter="pdflatex"
-         ns2:pdfconverter="inkscape"
-         ns2:text="$\\rightarrow \\text{Pe} \\in [0.125,256]$\n\n$\\rightarrow \\phi_P = 0.025$\n\n$\\rightarrow M\\in \\{0.0004,0.1,6.25\\}$"
-         ns2:preamble="/home/bensabat/.config/inkscape/extensions/textext/default_packages.tex"
-         ns2:scale="2.31140357144969"
-         ns2:alignment="middle center"
-         ns2:inkscapeversion="1.4.2"
-         ns2:jacobian_sqrt="0.815414"
+           style="font-weight:bold;font-size:8.19666px;text-align:start;text-anchor:start;fill:#333333;stroke-width:0.849585"
+           x="-110.40558"
+           y="15.820628"
+           id="tspan32-7">Parameters considered:</tspan><tspan
+           sodipodi:role="line"
+           style="font-weight:bold;font-size:8.19666px;text-align:start;text-anchor:start;fill:#333333;stroke-width:0.849585"
+           x="-110.40558"
+           y="26.066454"
+           id="tspan2" /><tspan
+           sodipodi:role="line"
+           style="font-weight:bold;font-size:8.19666px;text-align:start;text-anchor:start;fill:#333333;stroke-width:0.849585"
+           x="-110.40558"
+           y="36.312279"
+           id="tspan4" /></text><g
+         transform="matrix(0.88557494,0,0,0.88557494,-101.1317,21.546466)"
+         ns16:version="1.11.1"
+         ns16:texconverter="pdflatex"
+         ns16:pdfconverter="inkscape"
+         ns16:text="$\\rightarrow \\text{Pe} \\in [0.125,256]$\n\n$\\rightarrow \\phi_P = 0.025$\n\n$\\rightarrow M\\in \\{0.0004,0.1,6.25\\}$"
+         ns16:preamble="/home/bensabat/.config/inkscape/extensions/textext/default_packages.tex"
+         ns16:scale="2.31140357144969"
+         ns16:alignment="middle center"
+         ns16:inkscapeversion="1.4.2"
+         ns16:jacobian_sqrt="0.815414"
          id="g118"><defs
    id="id-5f0350c7-c3be-4407-8a4a-525c24cdabf8">
     <g
@@ -949,16 +959,16 @@
    id="id-1de5472d-46e0-406b-8885-24a01fe7d1ed" />
       </g></g>
 </g></g><g
-       transform="matrix(0.815412,0,0,0.815412,308.63661,33.801502)"
-       ns2:version="1.11.1"
-       ns2:texconverter="pdflatex"
-       ns2:pdfconverter="inkscape"
-       ns2:text="$\\tau_p\\gg \\tau_m$"
-       ns2:preamble="/home/bensabat/.config/inkscape/extensions/textext/default_packages.tex"
-       ns2:scale="2.31140357144969"
-       ns2:alignment="middle center"
-       ns2:inkscapeversion="1.4.2"
-       ns2:jacobian_sqrt="0.815412"
+       transform="matrix(0.86117317,0,0,0.86117317,365.33701,34.364835)"
+       ns16:version="1.11.1"
+       ns16:texconverter="pdflatex"
+       ns16:pdfconverter="inkscape"
+       ns16:text="$\\tau_p\\gg \\tau_m$"
+       ns16:preamble="/home/bensabat/.config/inkscape/extensions/textext/default_packages.tex"
+       ns16:scale="2.31140357144969"
+       ns16:alignment="middle center"
+       ns16:inkscapeversion="1.4.2"
+       ns16:jacobian_sqrt="0.815412"
        id="g124"><defs
    id="id-166883c8-a294-4212-929a-0a276bc3ebbd">
     <g
@@ -1045,16 +1055,16 @@
    id="id-d8cbb883-2b5c-4885-8c33-0261db1cbced" />
       </g></g>
 </g><g
-       transform="matrix(0.815412,0,0,0.815412,197.80155,42.940584)"
-       ns2:version="1.11.1"
-       ns2:texconverter="pdflatex"
-       ns2:pdfconverter="inkscape"
-       ns2:text="$T_\\text{kin}$"
-       ns2:preamble="/home/bensabat/.config/inkscape/extensions/textext/default_packages.tex"
-       ns2:scale="2.31140357144969"
-       ns2:alignment="middle center"
-       ns2:inkscapeversion="1.4.2"
-       ns2:jacobian_sqrt="0.815412"
+       transform="matrix(0.86117317,0,0,0.86117317,248.28185,44.016805)"
+       ns16:version="1.11.1"
+       ns16:texconverter="pdflatex"
+       ns16:pdfconverter="inkscape"
+       ns16:text="$T_\\text{kin}$"
+       ns16:preamble="/home/bensabat/.config/inkscape/extensions/textext/default_packages.tex"
+       ns16:scale="2.31140357144969"
+       ns16:alignment="middle center"
+       ns16:inkscapeversion="1.4.2"
+       ns16:jacobian_sqrt="0.815412"
        id="g157"><defs
    id="id-b70e5460-76cb-49a2-b589-da70cf7c9250">
     <g
@@ -1118,16 +1128,16 @@
    id="id-bdac04dd-ebb1-4ac9-8f7e-7e2d7cd9e97d" />
       </g></g>
 </g><g
-       transform="matrix(0.815412,0,0,0.815412,181.37889,63.235417)"
-       ns2:version="1.11.1"
-       ns2:texconverter="pdflatex"
-       ns2:pdfconverter="inkscape"
-       ns2:text="$T_\\text{kin}$"
-       ns2:preamble="/home/bensabat/.config/inkscape/extensions/textext/default_packages.tex"
-       ns2:scale="2.31140357144969"
-       ns2:alignment="middle center"
-       ns2:inkscapeversion="1.4.2"
-       ns2:jacobian_sqrt="0.815412"
+       transform="matrix(0.86117317,0,0,0.86117317,230.93754,65.45059)"
+       ns16:version="1.11.1"
+       ns16:texconverter="pdflatex"
+       ns16:pdfconverter="inkscape"
+       ns16:text="$T_\\text{kin}$"
+       ns16:preamble="/home/bensabat/.config/inkscape/extensions/textext/default_packages.tex"
+       ns16:scale="2.31140357144969"
+       ns16:alignment="middle center"
+       ns16:inkscapeversion="1.4.2"
+       ns16:jacobian_sqrt="0.815412"
        id="g157-3"><defs
    id="id-b70e5460-76cb-49a2-b589-da70cf7c9250-1">
     <g
@@ -1191,16 +1201,16 @@
    id="id-bdac04dd-ebb1-4ac9-8f7e-7e2d7cd9e97d-5" />
       </g></g>
 </g><g
-       transform="matrix(0.815412,0,0,0.815412,217.14725,140.21263)"
-       ns2:version="1.11.1"
-       ns2:texconverter="pdflatex"
-       ns2:pdfconverter="inkscape"
-       ns2:text="$T_\\text{kin}$"
-       ns2:preamble="/home/bensabat/.config/inkscape/extensions/textext/default_packages.tex"
-       ns2:scale="2.31140357144969"
-       ns2:alignment="middle center"
-       ns2:inkscapeversion="1.4.2"
-       ns2:jacobian_sqrt="0.815412"
+       transform="matrix(0.86117317,0,0,0.86117317,268.71323,146.74778)"
+       ns16:version="1.11.1"
+       ns16:texconverter="pdflatex"
+       ns16:pdfconverter="inkscape"
+       ns16:text="$T_\\text{kin}$"
+       ns16:preamble="/home/bensabat/.config/inkscape/extensions/textext/default_packages.tex"
+       ns16:scale="2.31140357144969"
+       ns16:alignment="middle center"
+       ns16:inkscapeversion="1.4.2"
+       ns16:jacobian_sqrt="0.815412"
        id="g157-3-0"><defs
    id="id-b70e5460-76cb-49a2-b589-da70cf7c9250-1-6">
     <g
@@ -1264,16 +1274,16 @@
    id="id-bdac04dd-ebb1-4ac9-8f7e-7e2d7cd9e97d-5-6" />
       </g></g>
 </g><g
-       transform="matrix(0.815412,0,0,0.815412,229.66588,42.940584)"
-       ns2:version="1.11.1"
-       ns2:texconverter="pdflatex"
-       ns2:pdfconverter="inkscape"
-       ns2:text="$T_\\text{kin4}$"
-       ns2:preamble="/home/bensabat/.config/inkscape/extensions/textext/default_packages.tex"
-       ns2:scale="2.31140357144969"
-       ns2:alignment="middle center"
-       ns2:inkscapeversion="1.4.2"
-       ns2:jacobian_sqrt="0.815412"
+       transform="matrix(0.86117317,0,0,0.86117317,281.93441,44.016805)"
+       ns16:version="1.11.1"
+       ns16:texconverter="pdflatex"
+       ns16:pdfconverter="inkscape"
+       ns16:text="$T_\\text{kin4}$"
+       ns16:preamble="/home/bensabat/.config/inkscape/extensions/textext/default_packages.tex"
+       ns16:scale="2.31140357144969"
+       ns16:alignment="middle center"
+       ns16:inkscapeversion="1.4.2"
+       ns16:jacobian_sqrt="0.815412"
        id="g163"><defs
    id="id-c46d4c85-8805-43ed-8738-ee8e133724ce">
     <g
@@ -1348,16 +1358,16 @@
    id="id-33a75dae-814b-4351-9d8b-bbe16b44a3f6" />
       </g></g>
 </g><g
-       transform="matrix(0.815412,0,0,0.815412,181.74254,52.424012)"
-       ns2:version="1.11.1"
-       ns2:texconverter="pdflatex"
-       ns2:pdfconverter="inkscape"
-       ns2:text="$T_\\text{osc}$"
-       ns2:preamble="/home/bensabat/.config/inkscape/extensions/textext/default_packages.tex"
-       ns2:scale="2.31140357144969"
-       ns2:alignment="middle center"
-       ns2:inkscapeversion="1.4.2"
-       ns2:jacobian_sqrt="0.815412"
+       transform="matrix(0.86117317,0,0,0.86117317,231.32161,54.032446)"
+       ns16:version="1.11.1"
+       ns16:texconverter="pdflatex"
+       ns16:pdfconverter="inkscape"
+       ns16:text="$T_\\text{osc}$"
+       ns16:preamble="/home/bensabat/.config/inkscape/extensions/textext/default_packages.tex"
+       ns16:scale="2.31140357144969"
+       ns16:alignment="middle center"
+       ns16:inkscapeversion="1.4.2"
+       ns16:jacobian_sqrt="0.815412"
        id="g168"><defs
    id="id-5ee325ea-6caf-495c-832e-8c6e6bbf292e">
     <g
@@ -1421,16 +1431,16 @@
    id="id-b20b19f9-cd48-43eb-a3bd-517d978c0ca4" />
       </g></g>
 </g><g
-       transform="matrix(0.815412,0,0,0.815412,149.56273,62.243229)"
-       ns2:version="1.11.1"
-       ns2:texconverter="pdflatex"
-       ns2:pdfconverter="inkscape"
-       ns2:text="$T_\\text{osc}$"
-       ns2:preamble="/home/bensabat/.config/inkscape/extensions/textext/default_packages.tex"
-       ns2:scale="2.31140357144969"
-       ns2:alignment="middle center"
-       ns2:inkscapeversion="1.4.2"
-       ns2:jacobian_sqrt="0.815412"
+       transform="matrix(0.86117317,0,0,0.86117317,197.33585,64.402721)"
+       ns16:version="1.11.1"
+       ns16:texconverter="pdflatex"
+       ns16:pdfconverter="inkscape"
+       ns16:text="$T_\\text{osc}$"
+       ns16:preamble="/home/bensabat/.config/inkscape/extensions/textext/default_packages.tex"
+       ns16:scale="2.31140357144969"
+       ns16:alignment="middle center"
+       ns16:inkscapeversion="1.4.2"
+       ns16:jacobian_sqrt="0.815412"
        id="g168-0"><defs
    id="id-5ee325ea-6caf-495c-832e-8c6e6bbf292e-6">
     <g
@@ -1494,16 +1504,16 @@
    id="id-b20b19f9-cd48-43eb-a3bd-517d978c0ca4-3" />
       </g></g>
 </g><g
-       transform="matrix(0.815412,0,0,0.815412,149.82732,110.36432)"
-       ns2:version="1.11.1"
-       ns2:texconverter="pdflatex"
-       ns2:pdfconverter="inkscape"
-       ns2:text="$T_\\text{osc}$"
-       ns2:preamble="/home/bensabat/.config/inkscape/extensions/textext/default_packages.tex"
-       ns2:scale="2.31140357144969"
-       ns2:alignment="middle center"
-       ns2:inkscapeversion="1.4.2"
-       ns2:jacobian_sqrt="0.815412"
+       transform="matrix(0.86117317,0,0,0.86117317,197.61529,115.22438)"
+       ns16:version="1.11.1"
+       ns16:texconverter="pdflatex"
+       ns16:pdfconverter="inkscape"
+       ns16:text="$T_\\text{osc}$"
+       ns16:preamble="/home/bensabat/.config/inkscape/extensions/textext/default_packages.tex"
+       ns16:scale="2.31140357144969"
+       ns16:alignment="middle center"
+       ns16:inkscapeversion="1.4.2"
+       ns16:jacobian_sqrt="0.815412"
        id="g168-0-6"><defs
    id="id-5ee325ea-6caf-495c-832e-8c6e6bbf292e-6-9">
     <g
@@ -1567,16 +1577,16 @@
    id="id-b20b19f9-cd48-43eb-a3bd-517d978c0ca4-3-3" />
       </g></g>
 </g><g
-       transform="matrix(0.815412,0,0,0.815412,148.95644,52.035656)"
-       ns2:version="1.11.1"
-       ns2:texconverter="pdflatex"
-       ns2:pdfconverter="inkscape"
-       ns2:text="$T_\\text{Ein}$"
-       ns2:preamble="/home/bensabat/.config/inkscape/extensions/textext/default_packages.tex"
-       ns2:scale="2.31140357144969"
-       ns2:alignment="middle center"
-       ns2:inkscapeversion="1.4.2"
-       ns2:jacobian_sqrt="0.815412"
+       transform="matrix(0.86117317,0,0,0.86117317,196.69553,53.622295)"
+       ns16:version="1.11.1"
+       ns16:texconverter="pdflatex"
+       ns16:pdfconverter="inkscape"
+       ns16:text="$T_\\text{Ein}$"
+       ns16:preamble="/home/bensabat/.config/inkscape/extensions/textext/default_packages.tex"
+       ns16:scale="2.31140357144969"
+       ns16:alignment="middle center"
+       ns16:inkscapeversion="1.4.2"
+       ns16:jacobian_sqrt="0.815412"
        id="g179"><defs
    id="id-153a5d2e-d9e8-4f85-ace4-01ecc1fa2646">
     <g
@@ -1640,16 +1650,16 @@
    id="id-3fa42770-060b-4fce-8076-e0528e21c829" />
       </g></g>
 </g><g
-       transform="matrix(0.815412,0,0,0.815412,179.8906,130.175)"
-       ns2:version="1.11.1"
-       ns2:texconverter="pdflatex"
-       ns2:pdfconverter="inkscape"
-       ns2:text="$T_\\text{Ein}$"
-       ns2:preamble="/home/bensabat/.config/inkscape/extensions/textext/default_packages.tex"
-       ns2:scale="2.31140357144969"
-       ns2:alignment="middle center"
-       ns2:inkscapeversion="1.4.2"
-       ns2:jacobian_sqrt="0.815412"
+       transform="matrix(0.86117317,0,0,0.86117317,229.36573,136.14685)"
+       ns16:version="1.11.1"
+       ns16:texconverter="pdflatex"
+       ns16:pdfconverter="inkscape"
+       ns16:text="$T_\\text{Ein}$"
+       ns16:preamble="/home/bensabat/.config/inkscape/extensions/textext/default_packages.tex"
+       ns16:scale="2.31140357144969"
+       ns16:alignment="middle center"
+       ns16:inkscapeversion="1.4.2"
+       ns16:jacobian_sqrt="0.815412"
        id="g179-1"><defs
    id="id-153a5d2e-d9e8-4f85-ace4-01ecc1fa2646-2">
     <g
@@ -1713,16 +1723,16 @@
    id="id-3fa42770-060b-4fce-8076-e0528e21c829-8" />
       </g></g>
 </g><g
-       transform="matrix(0.81541199,0,0,0.81541199,148.98306,139.65415)"
-       ns2:version="1.11.1"
-       ns2:texconverter="pdflatex"
-       ns2:pdfconverter="inkscape"
-       ns2:text="$T_\\text{conf}$"
-       ns2:preamble="/home/bensabat/.config/inkscape/extensions/textext/default_packages.tex"
-       ns2:scale="2.31140357144969"
-       ns2:alignment="middle center"
-       ns2:inkscapeversion="1.4.2"
-       ns2:jacobian_sqrt="1.0"
+       transform="matrix(0.86117316,0,0,0.86117316,196.72365,146.15797)"
+       ns16:version="1.11.1"
+       ns16:texconverter="pdflatex"
+       ns16:pdfconverter="inkscape"
+       ns16:text="$T_\\text{conf}$"
+       ns16:preamble="/home/bensabat/.config/inkscape/extensions/textext/default_packages.tex"
+       ns16:scale="2.31140357144969"
+       ns16:alignment="middle center"
+       ns16:inkscapeversion="1.4.2"
+       ns16:jacobian_sqrt="1.0"
        id="g178"><defs
    id="id-03a641d2-60f7-42ee-b3e6-c5b93b9cbcd0">
     <g
@@ -1797,16 +1807,16 @@
    id="id-8b64a1d7-eee9-44bf-8e9f-157b85886fb7" />
       </g></g>
 </g><g
-       transform="matrix(0.815412,0,0,0.815412,149.44699,130.63802)"
-       ns2:version="1.11.1"
-       ns2:texconverter="pdflatex"
-       ns2:pdfconverter="inkscape"
-       ns2:text="$T_\\text{vir}$"
-       ns2:preamble="/home/bensabat/.config/inkscape/extensions/textext/default_packages.tex"
-       ns2:scale="2.31140357144969"
-       ns2:alignment="middle center"
-       ns2:inkscapeversion="1.4.2"
-       ns2:jacobian_sqrt="0.815412"
+       transform="matrix(0.86117317,0,0,0.86117317,197.21362,136.63585)"
+       ns16:version="1.11.1"
+       ns16:texconverter="pdflatex"
+       ns16:pdfconverter="inkscape"
+       ns16:text="$T_\\text{vir}$"
+       ns16:preamble="/home/bensabat/.config/inkscape/extensions/textext/default_packages.tex"
+       ns16:scale="2.31140357144969"
+       ns16:alignment="middle center"
+       ns16:inkscapeversion="1.4.2"
+       ns16:jacobian_sqrt="0.815412"
        id="g184-5"><defs
    id="id-24eccdd7-5231-4bf6-9d32-b3a7555a05a9-9">
     <g
@@ -1870,16 +1880,16 @@
    id="id-f7c0a9cc-cc49-4a9c-b71f-200605f22160-6" />
       </g></g>
 </g><g
-       transform="matrix(0.815412,0,0,0.815412,233.41529,53.25087)"
-       ns2:version="1.11.1"
-       ns2:texconverter="pdflatex"
-       ns2:pdfconverter="inkscape"
-       ns2:text="$T_\\text{osc}&gt;T_\\text{kin}$"
-       ns2:preamble="/home/bensabat/.config/inkscape/extensions/textext/default_packages.tex"
-       ns2:scale="2.31140357144969"
-       ns2:alignment="middle center"
-       ns2:inkscapeversion="1.4.2"
-       ns2:jacobian_sqrt="0.815412"
+       transform="matrix(0.86117317,0,0,0.86117317,285.89424,54.905707)"
+       ns16:version="1.11.1"
+       ns16:texconverter="pdflatex"
+       ns16:pdfconverter="inkscape"
+       ns16:text="$T_\\text{osc}&gt;T_\\text{kin}$"
+       ns16:preamble="/home/bensabat/.config/inkscape/extensions/textext/default_packages.tex"
+       ns16:scale="2.31140357144969"
+       ns16:alignment="middle center"
+       ns16:inkscapeversion="1.4.2"
+       ns16:jacobian_sqrt="0.815412"
        id="g195"><defs
    id="id-a6c19d20-0291-4eba-9a15-34008324a2d4">
     <g

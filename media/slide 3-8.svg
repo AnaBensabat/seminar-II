@@ -8,7 +8,7 @@
    version="1.1"
    id="svg1"
    inkscape:version="1.4.2 (ebf0e940d0, 2025-05-08)"
-   sodipodi:docname="slide 3.svg"
+   sodipodi:docname="slide 3-9.svg"
    inkscape:export-filename="slide 3-8.svg"
    inkscape:export-xdpi="96"
    inkscape:export-ydpi="96"
@@ -30,7 +30,7 @@
      inkscape:document-units="px"
      inkscape:zoom="0.42"
      inkscape:cx="1496.4286"
-     inkscape:cy="695.2381"
+     inkscape:cy="692.85714"
      inkscape:window-width="1876"
      inkscape:window-height="1006"
      inkscape:window-x="0"
@@ -325,7 +325,7 @@
            x="1017.7241"
            y="210.76768"
            id="tspan6-4"
-           style="font-size:74.6667px">THREE APPROACHES TO DEFINE TEMPERATURE [2]:</tspan></text>
+           style="font-size:74.6667px">THREE APPROACHES TO DEFINE TEMPERATURE [3]:</tspan></text>
       <text
          xml:space="preserve"
          transform="translate(-218.27848,157.04343)"
@@ -364,7 +364,7 @@
          id="tspan14-0"
          x="540.58624"
          y="1189.8896"
-         style="stroke-width:4.13663">Generalized thermodynamic temperature [3]:</tspan></text>
+         style="stroke-width:4.13663">Generalized thermodynamic temperature [2]:</tspan></text>
   </g>
   <path
      style="display:inline;opacity:0.7;fill:#ff6600;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.740907"
@@ -6208,7 +6208,7 @@
        id="tspan47">non-Gaussian regimes</tspan></text>
   <text
      xml:space="preserve"
-     style="font-size:32px;font-family:'Source Sans Pro';-inkscape-font-specification:'Source Sans Pro';text-align:center;writing-mode:lr-tb;direction:ltr;text-anchor:middle;display:inline;mix-blend-mode:normal;fill:#800000;fill-rule:evenodd;stroke:none;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;paint-order:fill markers stroke;filter:url(#filter48-0)"
+     style="font-size:32px;font-family:'Source Sans Pro';-inkscape-font-specification:'Source Sans Pro';text-align:center;writing-mode:lr-tb;direction:ltr;text-anchor:middle;display:none;mix-blend-mode:normal;fill:#800000;fill-rule:evenodd;stroke:none;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;paint-order:fill markers stroke;filter:url(#filter48-0)"
      x="1405.328"
      y="693.72241"
      id="text44-9-4"
@@ -6217,4 +6217,21 @@
        x="1405.328"
        y="693.72241"
        id="tspan47-5">Computationally expensive</tspan></text>
+  <g
+     id="g55"
+     style="opacity:0.6;fill:#008080;stroke:#008080"
+     transform="matrix(0.97585955,0,0,1.0000241,29.193543,-9.5428417)">
+    <path
+       style="fill:#008080;fill-opacity:1;fill-rule:nonzero;stroke:#008080"
+       id="path53"
+       d="m 324.41122,604.65065 c 25.04235,1.67283 33.70056,2.47214 64.22953,2.6503 106.28635,0.62025 212.60484,-5.00568 318.56062,-12.82995 46.07906,-3.40269 92.07956,-7.7967 138.11934,-11.69506 151.72613,-16.13677 81.40908,-7.92388 211.01859,-24.05396 1.413,-0.47024 -5.2372,-20.45365 -6.6502,-19.9834 v 0 c -132.6457,5.76867 -60.93501,2.18932 -215.10707,11.2281 -171.09685,12.04437 -342.27495,24.40794 -512.55898,45.38267 -0.6577,0.16887 1.73047,9.47017 2.38817,9.3013 z" />
+    <path
+       style="fill:#008080;fill-opacity:1;fill-rule:nonzero;stroke:#008080"
+       id="path54"
+       d="m 353.15641,837.36015 c 23.87025,1.85901 20.84699,1.93542 54.87648,1.66828 48.74067,-0.38261 133.83858,-3.17482 177.70795,-4.87023 112.22379,-4.33712 168.32828,-7.58751 283.07045,-13.44741 121.61047,-8.11056 155.97241,-9.53933 272.62121,-20.37141 29.3829,-2.72852 58.7531,-5.6614 88.043,-9.25277 15.0412,-1.84427 29.9411,-4.6996 44.9116,-7.04939 0.7232,-0.21834 -2.3646,-10.44625 -3.0878,-10.22791 v 0 c -15.912,-0.80904 -31.8073,-2.07093 -47.7359,-2.4271 -122.5366,-2.74002 -245.10621,2.31921 -367.45693,8.5053 -50.15138,3.46442 -100.33646,6.47144 -150.45415,10.39326 -43.44529,3.39969 -86.8434,7.39801 -130.22132,11.57022 -55.22684,5.31186 -117.206,12.03462 -173.00091,19.60786 -17.15529,2.32855 -34.17858,5.56226 -51.34151,7.84766 -0.56948,0.14622 1.49835,8.19986 2.06783,8.05364 z" />
+    <path
+       style="fill:#008080;fill-opacity:1;fill-rule:nonzero;stroke:#008080"
+       id="path55"
+       d="m 1277.0692,1042.3789 c 6.4558,0.099 12.9112,0.3641 19.3674,0.2976 12.7277,-0.1311 25.4516,-0.5231 38.1747,-0.8905 67.8337,-1.9587 97.1195,-2.8896 169.2563,-7.4137 38.0351,-2.3854 76.0747,-4.8221 114.0377,-8.1645 38.9664,-3.4307 77.8138,-8.1014 116.7206,-12.1522 121.9584,-16.3907 67.1595,-7.1399 164.7137,-25.80459 1.0452,-0.38334 -4.3761,-15.16448 -5.4212,-14.78114 v 0 c -101.3741,5.21222 -44.8671,1.91827 -169.4847,10.48762 -39.2136,2.96028 -78.4585,5.53141 -117.6408,8.88085 -111.2773,9.51236 -222.5151,21.53056 -332.6659,40.15436 -0.6637,0.2081 2.2785,9.5943 2.9422,9.3862 z" />
+  </g>
 </svg>
