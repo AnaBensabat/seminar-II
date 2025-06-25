@@ -261,7 +261,7 @@
 	      <div class="transparent-square"></div>
 	    </div>
 	    
-	    <div class="" style="border:1px solid black;
+	    <div class="" style="border:5px solid black;
 					 position:absolute;
 					 width:800px;
 					 left:28%;
@@ -292,7 +292,7 @@
 		<p style="align:left;
 			  font-size: 28px;"><b>Out of equilibrium system:</b>
 		  <ol class="fragment">
-		    <li class="fragment"> long relaxation times for some degrees of freedom
+		    <li class="fragment"> long relaxation times for some degrees of freedom (glassy systems)
 		    <li class="fragment"> large persistent fluxes (e.g. self-propelling active systems)
 		  </ol>
 	
@@ -301,7 +301,7 @@
 	      <div class="fragment" style="width:650px;
 							  position:absolute;
 							  left: 10%;
-							  bottom: 16%;
+							  bottom: 10%;
 							  ">
 	      <img style=""  data-src="media/slide2-1.svg"/>
 	    </div>
@@ -313,7 +313,7 @@
 		  <ul class="fragment">
 		    <li class="fragment"> what are good definitions of temperature?
 		    <li class="fragment"> are there subsets of the parameter space where different definitions agree?
-		    <li class="fragment"> do they provide an analogous definition as an umbiguous property of the system?
+		    <li class="fragment"> do they provide an analogous definition as an unambiguous property of the system?
 		  </ul>
 	      </div>
 	      
@@ -323,7 +323,7 @@
 	    <div class="fragment " style="width:550px;
 							  position:absolute;
 							  right: 10%;
-							  bottom: 13%;
+							  bottom: 8%;
 							  ">
 	      <img style=""  data-src="media/slide2-2.svg"/>
 	    </div>
@@ -373,8 +373,8 @@
 		
 		\[
 		\begin{align}
-		\gamma \mathbf{\dot{r}}_i& = F_\text{act}\mathbf{n}_i - \nabla_i \sum_{i\neq j}U(r_{ij}) + \sqrt{2\gamma k_B T}\xi_i \\
-		\mathbf{n}_i &= (\cos\theta_i(t),\sin\theta_i(t)) \quad \text{with} \quad \dot{\theta}=\sqrt{2D_r}\eta_i \quad \text{and} \quad D_r= 3\gamma k_BT/ \sigma^2_d=\tau_P^{-1}
+		& m\dot{\mathbf{v}}_i = -\gamma_t\mathbf{v}_i + \gamma_tv_0\mathbf{n}_i - \sum^N_{j\neq i} \nabla_iU(r_{ij}) + \mathbf{F}_\text{ext,i} + \sqrt{k_BT_B\gamma_t}\xi_i \\
+		& \mathbf{n}_i = (\cos\theta_i(t),\sin\theta_i(t)) \quad \text{with} \quad \dot{\theta}=\sqrt{2D_r}\eta_i \quad \text{and} \quad D_r= 3\gamma k_BT/ \sigma^2_d=\tau_P^{-1}
 		\end{align}
 		\]		  
 	      </div>
@@ -388,8 +388,7 @@
 		\[
 		\begin{align}
 		&\langle\xi_i(t)\rangle=0, \quad \langle\xi_i(t)\xi_j(t^\prime)\rangle=\delta_{ij}\delta(t-t^\prime)\\
-	        &\langle\eta_i(t)\rangle=0, \quad \langle\eta_i(t)\eta_j(t^\prime)\rangle=\delta_{ij}\delta(t-t^\prime)\\
-	        &(m=1)
+	        &\langle\eta_i(t)\rangle=0, \quad \langle\eta_i(t)\eta_j(t^\prime)\rangle=\delta_{ij}\delta(t-t^\prime)
 		\end{align}
 		\]
 		
@@ -629,15 +628,15 @@
 					 white-space: pre-line;">
 	      <p align="center" style="font-size: 24px;
 				       text-align:center;
-				       margin:0"><b>Preliminaries:</b></p>The dynamical response of an operator <it>A</it> w.r.t. an external perturbation is
+				       margin:0"><b>Preliminaries:</b></p>The dynamical response of an operator <i>A</i> w.r.t. an external perturbation is
 	      \[\begin{align}
-	      \delta\langle A(x,t)\rangle = \int\text{d}^dx'\text{d}t' \chi(x,x',t,t')\delta h(x',t')\quad \xrightarrow[\text{}]{\text{Fourier transform}} \quad x(\omega) = \chi(\omega)f(\omega), \\ \chi\equiv\text{response function}
+	      \delta\langle A(x,t)\rangle = \int\text{d}^dx'\text{d}t' \chi(x,x',t,t')\delta h(x',t')\quad \xrightarrow[\text{}]{\text{Fourier transform}} \quad \delta \langle A(\omega) \rangle = \chi(\omega)\delta h(\omega), \\ \chi\equiv\text{response function}
 	      \end{align}
 	      \] It can be proven [3] that the imaginary part of the response function is proportional to the rate at which work done by external forces is dissipated as heat.
 
-	      The Fourier-space correlation function for two operators is given by:
+	      The Fourier-space correlation function for two operators <i>A</i> and <i>B</i> is given by:
 	      \[\begin{align}
-	      C_{AB}(\omega) = \langle A(\omega)B(\omega')\rangle\delta(\omega+\omega') &&\text{and} && S_{AB}(\omega) = C_{AB}(\omega) -\langle A\rangle\langle B\rangle 2\pi\delta(\omega).
+	      &C_{AB}(\mathbf{x},\mathbf{x'},\omega) = \langle A(\mathbf{x},\omega)B(\mathbf{x'},\omega')\rangle\delta(\omega+\omega'), \\ S_{AB}&(\mathbf{x},\mathbf{x'},\omega) = C_{AB}(\mathbf{x},\mathbf{x'},\omega) -\langle A(\mathbf{x})\rangle\langle B(\mathbf{x'})\rangle 2\pi\delta(\omega).
 	      \end{align}
 	      \]
 	     	      <p align="center" style="
@@ -645,7 +644,7 @@
 				       top:52%;
 				       left:22%;
 				       text-align:center;margin:0"><b>Back-of-the-envelope derivation for an harmonic oscillator:</b></p>Consider the equation of motion for a perturbed harmonic oscillator: \[\begin{align}
-	      \ddot{x} + \omega_0^2x + \gamma\dot{x} = f/m.
+	      \ddot{x} + \gamma\dot{x}+ \omega_0^2x = f/m.
 	      \end{align}
 	      \] The response function can be obtained by taking the Fourier transform of the equation of motion:
 	      \[\begin{align}
@@ -852,10 +851,10 @@
 							  position:absolute;
 							  top: 20%;">
 	      <img style=""  data-src="media/slide 10-0.svg" style="width:1800px;"/>
-	      <img class="zoomR"  src="media/fig10.jpeg" style="height:400px;
-							       position:absolute;
-							       bottom: 6%;
-							       left: 67.5%"></img>
+	      <!-- <img class="zoomR"  src="media/fig10.jpeg" style="height:400px; -->
+	      <!-- 						       position:absolute; -->
+	      <!-- 						       bottom: 6%; -->
+	      <!-- 						       left: 67.5%"></img> -->
 	      <img class="zoomR"  src="media/fig9.jpeg" style="height:400px;
 							       position:absolute;
 							       bottom: 5%;
@@ -870,10 +869,10 @@
 							  position:absolute;
 							  top: 20%;">
 	      <img style=""  data-src="media/slide 10-1.svg" style="width:1800px;"/>
-	      <img class="zoomR"  src="media/fig10.jpeg" style="height:400px;
-							       position:absolute;
-							       bottom: 6%;
-							       left: 67.5%"></img>
+	      <!-- <img class="zoomR"  src="media/fig10.jpeg" style="height:400px; -->
+	      <!-- 						       position:absolute; -->
+	      <!-- 						       bottom: 6%; -->
+	      <!-- 						       left: 67.5%"></img> -->
 	      <img class="zoomR"  src="media/fig9.jpeg" style="height:400px;
 							       position:absolute;
 							       bottom: 5%;
@@ -957,6 +956,14 @@
 	      <img style=""  data-src="media/slide 3-5.svg"/>
 	    </div>
 	    
+
+	    <div class="fragment fade-in-then-out" style="width:1800px;
+							  position:absolute;
+							  top:-5%;
+							  left:0%;">
+	      <img style=""  data-src="media/slide 3-6.svg"/>
+	    </div>
+		    
 	    <div class="fragment fade-in-then-out" style="width:1800px;
 							  position:absolute;
 							  top:-5%;
@@ -978,6 +985,7 @@
 							  left:0%;">
 	      <img style=""  data-src="media/slide 3-9.svg"/>
 	    </div>
+
 	    
 	    <!-- References -->
 	    <p  style="position:absolute;
