@@ -313,7 +313,7 @@
 		  <ul class="fragment">
 		    <li class="fragment"> what are good definitions of temperature?
 		    <li class="fragment"> are there subsets of the parameter space where different definitions agree?
-		    <li class="fragment"> do they provide an analogous definition as an unambiguous property of the system?
+		    <li class="fragment"> do they provide an analogous definition of temperature as an unambiguous property of the system?
 		  </ul>
 	      </div>
 	      
@@ -623,35 +623,36 @@
 	    	    <div class="fragment" style="position:absolute;
 					 width: 50%;
 					 left:0%;
-					 top:20%;
+					 top:18%;
 					 font-size: 22px;
 					 white-space: pre-line;">
 	      <p align="center" style="font-size: 24px;
 				       text-align:center;
 				       margin:0"><b>Preliminaries:</b></p>The dynamical response of an operator <i>A</i> w.r.t. an external perturbation is
-	      \[\begin{align}
+	      \[\small{\begin{align}
 	      \delta\langle A(x,t)\rangle = \int\text{d}^dx'\text{d}t' \chi(x,x',t,t')\delta h(x',t')\quad \xrightarrow[\text{}]{\text{Fourier transform}} \quad \delta \langle A(\omega) \rangle = \chi(\omega)\delta h(\omega), \\ \chi\equiv\text{response function}
-	      \end{align}
+	      \end{align}}
 	      \] It can be proven [3] that the imaginary part of the response function is proportional to the rate at which work done by external forces is dissipated as heat.
 
-	      The Fourier-space correlation function for two operators <i>A</i> and <i>B</i> is given by:
-	      \[\begin{align}
-	      &C_{AB}(\mathbf{x},\mathbf{x'},\omega) = \langle A(\mathbf{x},\omega)B(\mathbf{x'},\omega')\rangle\delta(\omega+\omega'), \\ S_{AB}&(\mathbf{x},\mathbf{x'},\omega) = C_{AB}(\mathbf{x},\mathbf{x'},\omega) -\langle A(\mathbf{x})\rangle\langle B(\mathbf{x'})\rangle 2\pi\delta(\omega).
-	      \end{align}
-	      \]
-	     	      <p align="center" style="
+	      The real-space correlation function for two operators <i>A</i> and <i>B</i> is given by:
+	      \[\small{\begin{align}
+	      &C_{AB}(\mathbf{x},\mathbf{x'},t,t')=\langle A(\mathbf{x},t)B(\mathbf{x'},t')\rangle,\\
+	      S_{AB}(\mathbf{x},\mathbf{x'},t,t')&=\langle (A(\mathbf{x},t)-\langle A(\mathbf{x},t)\rangle)(B(\mathbf{x'},t')-\langle B(\mathbf{x'},t')\rangle)\rangle,
+	      \end{align}}\] which can be represented in Fourier-space:
+	      \[\small{\begin{align}
+	      &\langle A(\mathbf{x},\omega)B(\mathbf{x'},\omega')\rangle = C_{AB}(\mathbf{x},\mathbf{x'},\omega)2\pi\delta(\omega+\omega'), \\ S_{AB}&(\mathbf{x},\mathbf{x'},\omega) = C_{AB}(\mathbf{x},\mathbf{x'},\omega) -\langle A(\mathbf{x})\rangle\langle B(\mathbf{x'})\rangle 2\pi\delta(\omega).\end{align}}\]
+	      <p align="center" style="
 				       font-size: 24px;
 				       top:52%;
 				       left:22%;
-				       text-align:center;margin:0"><b>Back-of-the-envelope derivation for an harmonic oscillator:</b></p>Consider the equation of motion for a perturbed harmonic oscillator: \[\begin{align}
+				       text-align:center;margin:0"><b>Back-of-the-envelope derivation for an harmonic oscillator:</b></p>Consider the equation of motion for a perturbed harmonic oscillator: \[\small{\begin{align}
 	      \ddot{x} + \gamma\dot{x}+ \omega_0^2x = f/m.
-	      \end{align}
+	      \end{align}}
 	      \] The response function can be obtained by taking the Fourier transform of the equation of motion:
-	      \[\begin{align}
+	      \[\small{\begin{align}
 	      \chi(\omega) = \frac{1}{m}\frac{1}{-\omega^2+\omega_0^2-i\omega\gamma}.
-	      \end{align}
+	      \end{align}}
 	      \]
-
 	      
 		    </div>
 	    <div class="fragment" style="position: absolute;
@@ -661,17 +662,17 @@
 					 top:19%;
 					 white-space: pre-line;">
 	      Considering the force is a noisy variable,
-	      \[\begin{align}
+	      \[\small{\begin{align}
 	      f(\omega) = \xi(\omega)\quad \text{s.t.}\quad \langle\xi(t)\rangle = 0 \quad \text{and} \quad \langle \xi(t)\xi(t')\rangle = 2m\gamma k_BT\delta(t-t').
-	      \end{align}
+	      \end{align}}
 	      \]	      we can write
-	      \[\begin{align}
+	      \[\small{\begin{align}
 	      x(\omega) = \chi(\omega)\xi(\omega) = \frac{\xi(\omega)}{m[-\omega^2+\omega_0^2-i\omega\gamma]}.
-	      \end{align}
+	      \end{align}}
 	      \]  It then follows
-	      \[\begin{align}
+	      \[\small{\begin{align}
 	      C_{xx}(\omega) = 2m\gamma T |\chi_{xx}(\omega)|^2.
-	      \end{align}
+	      \end{align}}
 	      \]
 	      Considering now the system is only subject to thermal noise, and hence, its average position is zero,
 	      \[\begin{align}
@@ -1022,7 +1023,7 @@
 
 	    <div style="margin-left: 10%; margin-right: 10%; margin-top: 5%; font-size:35px;">
 	      <ul>
-		<li>The non-trivial coupling between position and velocity in active systems leads to non-Boltzmann distributions making it impossible to uniquely quantify fluctuations based on a single temperature parameter.</li>
+		<li>In active systems it is not possible to relate position and velocity fluctuations based on a single temperature parameter.</li>
 		<li>This leads us to the different temperature definitions that can be grouped into two families.</li>
 		<li>The two families can be matched in the far-from-equilibrium regime by rescaling temperatures with the particle mass.</li>
 	      </ul>
